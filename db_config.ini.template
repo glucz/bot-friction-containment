@@ -1,0 +1,20 @@
+; AGWA database connection — copy to db_config.ini and fill in, then save.
+; db_config.ini is gitignored; your password will not be committed.
+; A READ-ONLY MySQL user is strongly preferred (the pipeline only runs SELECTs,
+; but a read-only grant makes that guarantee structural).
+
+[mysql]
+host = YOUR_DB_HOST
+port = 3306
+user = YOUR_DB_USER
+password = YOUR_DB_PASSWORD
+database = agentinfo
+
+; --- optional ---
+; connect_timeout in seconds
+connect_timeout = 15
+; per-query auto-abort in milliseconds (safety net against runaway scans on 6B rows)
+max_execution_time_ms = 60000
+; TLS: set to true if the server requires SSL; point ssl_ca at the CA cert if needed
+use_ssl = false
+ssl_ca =

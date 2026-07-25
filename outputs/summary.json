@@ -1,0 +1,181 @@
+{
+  "A_nonstationarity": {
+    "nonstationarity_rate": {
+      "bot": {
+        "pct_with_any_feature_trend": 98.9,
+        "n_agents": 177
+      },
+      "human": {
+        "pct_with_any_feature_trend": 98.5,
+        "n_agents": 200
+      },
+      "chrome": {
+        "pct_with_any_feature_trend": 99.7,
+        "n_agents": 1191
+      },
+      "pothuman": {
+        "pct_with_any_feature_trend": 98.8,
+        "n_agents": 2015
+      }
+    },
+    "bot_vs_human_trend_fingerprint": {
+      "html": 23.2,
+      "php": 14.1,
+      "compliance": 13.6,
+      "p404": 7.1,
+      "ctry_ent": -45.0,
+      "url_ent": -31.7,
+      "dom_ent": -26.3,
+      "evasion_index": -26.0
+    }
+  },
+  "B_filter_response": {
+    "signed_did": {
+      "evasion_index": {
+        "bot": 0.002,
+        "human": 0.0048,
+        "did": -0.0028,
+        "sig": false
+      },
+      "ip_ent": {
+        "bot": -0.0004,
+        "human": 0.0051,
+        "did": -0.0054,
+        "sig": false
+      },
+      "compliance": {
+        "bot": 0.0032,
+        "human": 0.0003,
+        "did": 0.0029,
+        "sig": false
+      },
+      "log_hits": {
+        "bot": -0.0887,
+        "human": -0.0571,
+        "did": -0.0316,
+        "sig": false
+      },
+      "resistance": {
+        "bot": 0.0172,
+        "human": 0.0365,
+        "did": -0.0193,
+        "sig": true
+      }
+    },
+    "normalized_response_did": {
+      "evasion_index": {
+        "bot_mean_z": 0.725,
+        "human_mean_z": 0.465,
+        "did_z": 0.26,
+        "ci": [
+          0.098,
+          0.446
+        ],
+        "sig": true
+      },
+      "ip_ent": {
+        "bot_mean_z": 0.678,
+        "human_mean_z": 0.471,
+        "did_z": 0.207,
+        "ci": [
+          0.06,
+          0.374
+        ],
+        "sig": true
+      },
+      "compliance": {
+        "bot_mean_z": 0.372,
+        "human_mean_z": 0.034,
+        "did_z": 0.338,
+        "ci": [
+          0.258,
+          0.432
+        ],
+        "sig": true
+      },
+      "log_hits": {
+        "bot_mean_z": 0.99,
+        "human_mean_z": 0.546,
+        "did_z": 0.444,
+        "ci": [
+          0.255,
+          0.651
+        ],
+        "sig": true
+      }
+    },
+    "n_bot_agents_with_events": 129,
+    "n_human_agents_with_events": 173
+  },
+  "C_trajectory": {
+    "torch_available": false,
+    "bot": {
+      "median_drift": 2.011,
+      "median_adaptation_time_days": 5.0,
+      "pct_oscillatory": 23.2
+    },
+    "human": {
+      "median_drift": 1.804,
+      "median_adaptation_time_days": 2.0,
+      "pct_oscillatory": 8.0
+    },
+    "note": "model-free trajectory used; install torch to add true b(t) curves"
+  },
+  "D_strategy_mix": {
+    "cluster_to_strategy": {
+      "2": "evasive",
+      "0": "visible",
+      "1": "mimicry"
+    },
+    "bot_mix": {
+      "visible": 0.22,
+      "evasive": 0.78,
+      "mimicry": 0.0
+    },
+    "chrome_mix": {
+      "visible": 0.788,
+      "evasive": 0.211,
+      "mimicry": 0.001
+    },
+    "human_mix": {
+      "visible": 0.855,
+      "evasive": 0.14,
+      "mimicry": 0.005
+    },
+    "bot_lifecycle_shift": {
+      "x0_initial_conditions_early": {
+        "visible": 0.288,
+        "evasive": 0.712,
+        "mimicry": 0.0
+      },
+      "late": {
+        "visible": 0.265,
+        "evasive": 0.729,
+        "mimicry": 0.006
+      },
+      "delta_visible": -0.024,
+      "delta_evasive": 0.018
+    }
+  },
+  "E_calibration": {
+    "botness_density": {
+      "n": 1191,
+      "mean": 0.454,
+      "frac_above_threshold": 0.624,
+      "threshold": 0.234
+    },
+    "perturbation": {
+      "bot": {
+        "median_volume_cv": 1.22,
+        "median_burst_frac": 0.031,
+        "median_volume_autocorr_days": 7.0
+      },
+      "human": {
+        "median_volume_cv": 1.78,
+        "median_burst_frac": 0.047,
+        "median_volume_autocorr_days": 24.0
+      }
+    },
+    "type_distribution_distortion_wasserstein_bot_vs_human": 0.0409
+  }
+}

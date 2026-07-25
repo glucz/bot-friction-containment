@@ -1,0 +1,678 @@
+{
+  "c_E=0.25": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 8148.519702133432,
+        "human_harm": 2677.0,
+        "evasion_share": 0.4155044073721959,
+        "observed": 4591.1263767355595,
+        "L_D": 11850.230602014399,
+        "extraction_idx": 68.0,
+        "observed_idx": 38.3,
+        "L_D_idx": 98.9
+      },
+      "throttle": {
+        "extraction": 7753.249271596729,
+        "human_harm": 3483.0,
+        "evasion_share": 0.4968000634661048,
+        "observed": 3383.2435411799847,
+        "L_D": 12617.596994681788,
+        "extraction_idx": 64.7,
+        "observed_idx": 28.2,
+        "L_D_idx": 105.3
+      },
+      "graded": {
+        "extraction": 10713.167884675517,
+        "human_harm": 245.7,
+        "evasion_share": 0.0,
+        "observed": 10713.167884675517,
+        "L_D": 11125.832611020915,
+        "extraction_idx": 89.4,
+        "observed_idx": 89.4,
+        "L_D_idx": 92.9
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.35,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.092
+  },
+  "c_E=0.35 (base)": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 3483.0,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 11546.699025786273,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 96.4
+      },
+      "graded": {
+        "extraction": 7949.480615332011,
+        "human_harm": 1283.4,
+        "evasion_share": 0.37593268178986133,
+        "observed": 4803.496706491603,
+        "L_D": 10165.632242286449,
+        "extraction_idx": 66.3,
+        "observed_idx": 40.1,
+        "L_D_idx": 84.8
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.7999999999999998,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.479
+  },
+  "c_E=0.5": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 6583.372316762909,
+        "human_harm": 2677.0,
+        "evasion_share": 0.2885078605095137,
+        "observed": 4591.1263767355595,
+        "L_D": 9897.35600586332,
+        "extraction_idx": 54.9,
+        "observed_idx": 38.3,
+        "L_D_idx": 82.6
+      },
+      "throttle": {
+        "extraction": 6021.205724864444,
+        "human_harm": 3483.0,
+        "evasion_share": 0.3016497444292408,
+        "observed": 3913.44455752202,
+        "L_D": 10338.831986074994,
+        "extraction_idx": 50.3,
+        "observed_idx": 32.7,
+        "L_D_idx": 86.3
+      },
+      "graded": {
+        "extraction": 7966.220758672006,
+        "human_harm": 721.9,
+        "evasion_share": 0.0,
+        "observed": 7966.220758672006,
+        "L_D": 8894.336988286137,
+        "extraction_idx": 66.5,
+        "observed_idx": 66.5,
+        "L_D_idx": 74.2
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.5999999999999999,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.27
+  },
+  "rho=0.2": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 8148.519702133432,
+        "human_harm": 2677.0,
+        "evasion_share": 0.4155044073721959,
+        "observed": 4591.1263767355595,
+        "L_D": 11832.44363538741,
+        "extraction_idx": 68.0,
+        "observed_idx": 38.3,
+        "L_D_idx": 98.8
+      },
+      "throttle": {
+        "extraction": 7694.684738419312,
+        "human_harm": 3483.0,
+        "evasion_share": 0.47256404570673904,
+        "observed": 3590.7850909481745,
+        "L_D": 12484.814821815344,
+        "extraction_idx": 64.2,
+        "observed_idx": 30.0,
+        "L_D_idx": 104.2
+      },
+      "graded": {
+        "extraction": 9914.621731197,
+        "human_harm": 362.2,
+        "evasion_share": 0.0,
+        "observed": 9914.621731197,
+        "L_D": 10463.01697534111,
+        "extraction_idx": 82.8,
+        "observed_idx": 82.8,
+        "L_D_idx": 87.3
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.42499999999999993,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.135
+  },
+  "rho=0.3 (base)": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 3483.0,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 11546.699025786273,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 96.4
+      },
+      "graded": {
+        "extraction": 7949.480615332011,
+        "human_harm": 1283.4,
+        "evasion_share": 0.37593268178986133,
+        "observed": 4803.496706491603,
+        "L_D": 10165.632242286449,
+        "extraction_idx": 66.3,
+        "observed_idx": 40.1,
+        "L_D_idx": 84.8
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.7999999999999998,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.479
+  },
+  "rho=0.45": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 6583.372316762909,
+        "human_harm": 2677.0,
+        "evasion_share": 0.2885078605095137,
+        "observed": 4591.1263767355595,
+        "L_D": 9912.297850413524,
+        "extraction_idx": 54.9,
+        "observed_idx": 38.3,
+        "L_D_idx": 82.7
+      },
+      "throttle": {
+        "extraction": 6053.080044686189,
+        "human_harm": 3483.0,
+        "evasion_share": 0.31449393563793737,
+        "observed": 3828.398071309726,
+        "L_D": 10418.366256247622,
+        "extraction_idx": 50.5,
+        "observed_idx": 32.0,
+        "L_D_idx": 87.0
+      },
+      "graded": {
+        "extraction": 6630.198351171546,
+        "human_harm": 1852.3,
+        "evasion_share": 0.2907908149479084,
+        "observed": 4562.9691491777085,
+        "L_D": 9237.747482292714,
+        "extraction_idx": 55.3,
+        "observed_idx": 38.1,
+        "L_D_idx": 77.1
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.9749999999999999,
+      "width": 0.08
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.692
+  },
+  "K_E=0.25": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7581.896285455093,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3821713781641146,
+        "observed": 4591.1263767355595,
+        "L_D": 11137.857834085886,
+        "extraction_idx": 63.3,
+        "observed_idx": 38.3,
+        "L_D_idx": 93.0
+      },
+      "throttle": {
+        "extraction": 7078.704874455365,
+        "human_harm": 3483.0,
+        "evasion_share": 0.42889436197809555,
+        "observed": 3662.2969571288168,
+        "L_D": 11711.05019908291,
+        "extraction_idx": 59.1,
+        "observed_idx": 30.6,
+        "L_D_idx": 97.7
+      },
+      "graded": {
+        "extraction": 9531.021908356135,
+        "human_harm": 454.3,
+        "evasion_share": 0.0,
+        "observed": 9531.021908356135,
+        "L_D": 10219.106034205872,
+        "extraction_idx": 79.5,
+        "observed_idx": 79.5,
+        "L_D_idx": 85.3
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.4749999999999999,
+      "width": 0.12
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.17
+  },
+  "K_E=0.5 (base)": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 3483.0,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 11546.699025786273,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 96.4
+      },
+      "graded": {
+        "extraction": 7949.480615332011,
+        "human_harm": 1283.4,
+        "evasion_share": 0.37593268178986133,
+        "observed": 4803.496706491603,
+        "L_D": 10165.632242286449,
+        "extraction_idx": 66.3,
+        "observed_idx": 40.1,
+        "L_D_idx": 84.8
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.7999999999999998,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.479
+  },
+  "K_E=1.0": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7281.784564555011,
+        "human_harm": 2677.0,
+        "evasion_share": 0.342255425581672,
+        "observed": 4591.1263767355595,
+        "L_D": 10776.744437372301,
+        "extraction_idx": 60.8,
+        "observed_idx": 38.3,
+        "L_D_idx": 89.9
+      },
+      "throttle": {
+        "extraction": 6797.993411409772,
+        "human_harm": 3483.0,
+        "evasion_share": 0.38579824685462355,
+        "observed": 3701.4537065671516,
+        "L_D": 11370.12953449546,
+        "extraction_idx": 56.7,
+        "observed_idx": 30.9,
+        "L_D_idx": 94.9
+      },
+      "graded": {
+        "extraction": 7715.291781523206,
+        "human_harm": 1448.9,
+        "evasion_share": 0.35101291296841136,
+        "observed": 4804.540186979822,
+        "L_D": 10071.587257877474,
+        "extraction_idx": 64.4,
+        "observed_idx": 40.1,
+        "L_D_idx": 84.1
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.8499999999999999,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.541
+  },
+  "q=1.0": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 5447.9,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 13511.633681730762,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 112.8
+      },
+      "graded": {
+        "extraction": 9629.099421480492,
+        "human_harm": 1462.6,
+        "evasion_share": 0.0,
+        "observed": 9629.099421480492,
+        "L_D": 11282.615583384626,
+        "extraction_idx": 80.4,
+        "observed_idx": 80.4,
+        "L_D_idx": 94.2
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.44999999999999996,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": false,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.546
+  },
+  "q=1.5": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 4234.2,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 12297.955031815469,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 102.6
+      },
+      "graded": {
+        "extraction": 9629.099421480492,
+        "human_harm": 735.3,
+        "evasion_share": 0.0,
+        "observed": 9629.099421480492,
+        "L_D": 10555.277224464277,
+        "extraction_idx": 80.4,
+        "observed_idx": 80.4,
+        "L_D_idx": 88.1
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.44999999999999996,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.275
+  },
+  "q=2.0 (base)": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 3483.0,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 11546.699025786273,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 96.4
+      },
+      "graded": {
+        "extraction": 7949.480615332011,
+        "human_harm": 1283.4,
+        "evasion_share": 0.37593268178986133,
+        "observed": 4803.496706491603,
+        "L_D": 10165.632242286449,
+        "extraction_idx": 66.3,
+        "observed_idx": 40.1,
+        "L_D_idx": 84.8
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.7999999999999998,
+      "width": 0.05
+    },
+    "throttle_worst_active_LD": true,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.479
+  },
+  "q=3.0": {
+    "policies": {
+      "none": {
+        "extraction": 11981.276629204382,
+        "human_harm": 0.0,
+        "evasion_share": 0.0,
+        "observed": 11981.276629204382,
+        "L_D": 11981.276629204382,
+        "extraction_idx": 100.0,
+        "observed_idx": 100.0,
+        "L_D_idx": 100.0
+      },
+      "binary": {
+        "extraction": 7442.101980574871,
+        "human_harm": 2677.0,
+        "evasion_share": 0.3643044259777185,
+        "observed": 4591.1263767355595,
+        "L_D": 10961.71661463246,
+        "extraction_idx": 62.1,
+        "observed_idx": 38.3,
+        "L_D_idx": 91.5
+      },
+      "throttle": {
+        "extraction": 6950.497298655085,
+        "human_harm": 2635.4,
+        "evasion_share": 0.40969246846027285,
+        "observed": 3683.4350457698447,
+        "L_D": 10699.138791648089,
+        "extraction_idx": 58.0,
+        "observed_idx": 30.7,
+        "L_D_idx": 89.3
+      },
+      "graded": {
+        "extraction": 7377.714719139146,
+        "human_harm": 1059.1,
+        "evasion_share": 0.37579088527334703,
+        "observed": 4352.652767936934,
+        "L_D": 9448.413616338932,
+        "extraction_idx": 61.6,
+        "observed_idx": 36.3,
+        "L_D_idx": 78.9
+      }
+    },
+    "tuned_schedule": {
+      "ceiling": 0.9749999999999999,
+      "width": 0.12
+    },
+    "throttle_worst_active_LD": false,
+    "graded_best_LD": true,
+    "best_dashboard_is_throttle": true,
+    "graded_vs_binary_harm_ratio": 0.396
+  }
+}

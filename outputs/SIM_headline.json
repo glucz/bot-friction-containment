@@ -1,0 +1,52 @@
+{
+  "f_switch": 0.8967441775617744,
+  "f_min_at_vref": 0.5578607917351412,
+  "sens": {
+    "K_E_base": {
+      "K_E": 0.5,
+      "f_switch": 0.8967441775617744,
+      "band_at_vref": 0.33888338582663313,
+      "v_collapse": 1.1190232532685267
+    },
+    "K_E_half": {
+      "K_E": 0.25,
+      "f_switch": 0.7059590189399146,
+      "band_at_vref": 0.1480982272047734,
+      "v_collapse": 0.8117877056819746
+    },
+    "K_E_double": {
+      "K_E": 1.0,
+      "f_switch": Infinity,
+      "band_at_vref": 0.44213920826485875,
+      "v_collapse": 1.3
+    }
+  },
+  "static_f_target": 0.7999999999999998,
+  "static_width": 0.05,
+  "k_crit": 1.0,
+  "k_stable": 0.5,
+  "k_unstable": 2.0,
+  "osc_period": 40.0,
+  "V_target": 4800.000000000001,
+  "retreat_check": {
+    "sim_light": 0.19866666666666666,
+    "sim_heavy": 0.3868333333333333,
+    "sim_evasion_light": 0.0,
+    "sim_evasion_heavy": 0.23291666666666666,
+    "measured_light": 0.141,
+    "measured_heavy": 0.073
+  },
+  "ranking_main": [
+    "static_graded_ft0.80",
+    "adaptive_graded_k0.50",
+    "binary_block_tau0.234",
+    "aggressive_throttle_3b",
+    "no_defense"
+  ],
+  "ranking_alt": [
+    "static_graded_ft0.47",
+    "binary_block_tau0.234",
+    "aggressive_throttle_3b",
+    "no_defense"
+  ]
+}

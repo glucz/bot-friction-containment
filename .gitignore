@@ -1,0 +1,14 @@
+# Credentials — never commit
+db_config.ini
+
+# Python
+__pycache__/
+*.pyc
+
+# Local DB extraction cache (large)
+cache/
+*.parquet
+
+# Run logs
+*.log
+*.out

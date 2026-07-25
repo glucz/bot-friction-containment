@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this code or these outputs, please cite the paper below."
+title: "Analysis pipeline and calibrated simulation for 'Keeping Agentic Traffic Under Control Where Aggressive Blocking Fails'"
+abstract: >-
+  Analysis pipeline and calibrated simulation behind a four-year study of how
+  automated agents respond to real production friction: difference-in-differences
+  event studies over 6.05 billion requests and 49,080 labelled agents from the
+  AGWA corpus, observability-collapse, lead-lag, dose-selection and
+  identity-rotation robustness batteries, and the containment-threshold policy
+  simulation.
+type: software
+authors:
+  - family-names: Lucz
+    given-names: "Géza"
+    affiliation: "Department of Automation and Applied Informatics, Faculty of Electrical Engineering and Informatics, Budapest University of Technology and Economics, Műegyetem rkp. 3., H-1111 Budapest, Hungary"
+  - family-names: Forstner
+    given-names: Bertalan
+    affiliation: "Department of Automation and Applied Informatics, Faculty of Electrical Engineering and Informatics, Budapest University of Technology and Economics, Műegyetem rkp. 3., H-1111 Budapest, Hungary"
+license: MIT
+repository-code: "https://github.com/glucz/bot-friction-containment"
+url: "https://github.com/glucz/bot-friction-containment"
+keywords:
+  - bot mitigation
+  - adversarial friction
+  - security economics
+  - web scraping
+  - difference-in-differences
+  - overdeterrence
+preferred-citation:
+  type: article
+  title: "Keeping Agentic Traffic Under Control Where Aggressive Blocking Fails: Evidence from Four Years of Web Traffic"
+  authors:
+    - family-names: Lucz
+      given-names: "Géza"
+      affiliation: "Department of Automation and Applied Informatics, Faculty of Electrical Engineering and Informatics, Budapest University of Technology and Economics, Műegyetem rkp. 3., H-1111 Budapest, Hungary"
+    - family-names: Forstner
+      given-names: Bertalan
+      affiliation: "Department of Automation and Applied Informatics, Faculty of Electrical Engineering and Informatics, Budapest University of Technology and Economics, Műegyetem rkp. 3., H-1111 Budapest, Hungary"
+  year: 2026
+references:
+  - type: data
+    title: "AGWA: aggregate web activity dataset for user-agent behavior classification"
+    doi: 10.5281/zenodo.14497695
+    authors:
+      - family-names: Lucz
+        given-names: "Géza"
+      - family-names: Forstner
+        given-names: Bertalan

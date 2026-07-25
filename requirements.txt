@@ -1,0 +1,15 @@
+# Core
+numpy
+pandas
+scipy
+matplotlib
+scikit-learn
+
+# Parquet cache for the DB battery
+pyarrow
+
+# Read-only MySQL access (DB battery only; not needed for cache re-runs)
+pymysql
+
+# Optional: true botness curve b(t) from the transformer classifier
+# torch

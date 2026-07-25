@@ -1,0 +1,240 @@
+{
+  "n_events_total": 55249,
+  "n_nonfinite_dropped": 0,
+  "groups": {
+    "bot": {
+      "n_events": 28367,
+      "n_agents": 10955,
+      "intensity_median_split": 0.3077,
+      "raw_frontier": {
+        "light": {
+          "n": 14197,
+          "dO": -0.1087,
+          "dvol": 0.04,
+          "frac_retreat": 0.141
+        },
+        "heavy": {
+          "n": 14170,
+          "dO": -0.2648,
+          "dvol": 0.0242,
+          "frac_retreat": 0.073
+        }
+      },
+      "raw_gap": {
+        "dO_heavy_minus_light": -0.1561,
+        "retreat_heavy_minus_light": -0.0681
+      },
+      "balance": {
+        "pre_O": {
+          "light_mean": 2.0926,
+          "heavy_mean": 2.5563,
+          "diff": 0.4638,
+          "diff_ci95": [
+            0.3752,
+            0.5475
+          ],
+          "smd": 0.257,
+          "smd_ci95": [
+            0.1951,
+            0.3235
+          ]
+        },
+        "pre_logvol": {
+          "light_mean": 2.434,
+          "heavy_mean": 1.2162,
+          "diff": -1.2178,
+          "diff_ci95": [
+            -1.2604,
+            -1.1755
+          ],
+          "smd": -1.1633,
+          "smd_ci95": [
+            -1.1953,
+            -1.1314
+          ]
+        }
+      },
+      "fig_means": {
+        "pre_O_light": [
+          2.0926,
+          [
+            2.0079,
+            2.1758
+          ]
+        ],
+        "pre_O_heavy": [
+          2.5563,
+          [
+            2.5228,
+            2.5925
+          ]
+        ],
+        "post_O_light": [
+          1.9839,
+          [
+            1.9018,
+            2.0727
+          ]
+        ],
+        "post_O_heavy": [
+          2.2916,
+          [
+            2.26,
+            2.326
+          ]
+        ]
+      },
+      "raw_gap_ci": {
+        "dO_ci95": [
+          -0.1884,
+          -0.1235
+        ],
+        "retreat_ci95": [
+          -0.0757,
+          -0.0604
+        ]
+      },
+      "adjusted_ols": {
+        "controls": [
+          "pre_O",
+          "pre_logvol"
+        ],
+        "heavy_coef_dO": 0.1325,
+        "heavy_coef_dO_ci95": [
+          0.0919,
+          0.1737
+        ],
+        "heavy_coef_retreat": 0.0687,
+        "heavy_coef_retreat_ci95": [
+          0.0608,
+          0.0767
+        ],
+        "raw_vs_adjusted_dO": [
+          -0.1561,
+          0.1325
+        ],
+        "raw_vs_adjusted_retreat": [
+          -0.0681,
+          0.0687
+        ]
+      },
+      "matching": {
+        "spec": "1-NN with replacement on standardized (pre_O, pre_logvol), caliper 0.2 pooled SD",
+        "n_heavy": 14170,
+        "n_matched": 14148,
+        "pct_discarded": 0.16,
+        "matched_diff_dO": 0.1692,
+        "matched_diff_dO_ci95": [
+          -0.2438,
+          0.2791
+        ],
+        "matched_diff_retreat": 0.0399,
+        "matched_diff_retreat_ci95": [
+          0.033,
+          0.0459
+        ]
+      }
+    },
+    "control": {
+      "n_events": 26882,
+      "n_agents": 3665,
+      "intensity_median_split": 0.0345,
+      "raw_frontier": {
+        "light": {
+          "n": 13477,
+          "dO": 0.005,
+          "dvol": 0.0556,
+          "frac_retreat": 0.114
+        },
+        "heavy": {
+          "n": 13405,
+          "dO": -0.01,
+          "dvol": 0.042,
+          "frac_retreat": 0.153
+        }
+      },
+      "raw_gap": {
+        "dO_heavy_minus_light": -0.015,
+        "retreat_heavy_minus_light": 0.0391
+      },
+      "balance": {
+        "pre_O": {
+          "light_mean": 2.4549,
+          "heavy_mean": 2.0692,
+          "diff": -0.3857,
+          "diff_ci95": [
+            -0.4907,
+            -0.2837
+          ],
+          "smd": -0.2418,
+          "smd_ci95": [
+            -0.3126,
+            -0.1754
+          ]
+        },
+        "pre_logvol": {
+          "light_mean": 5.2658,
+          "heavy_mean": 3.1668,
+          "diff": -2.0991,
+          "diff_ci95": [
+            -2.1787,
+            -2.0142
+          ],
+          "smd": -1.3241,
+          "smd_ci95": [
+            -1.3863,
+            -1.2596
+          ]
+        }
+      },
+      "fig_means": {
+        "pre_O_light": [
+          2.4549,
+          [
+            2.3867,
+            2.5407
+          ]
+        ],
+        "pre_O_heavy": [
+          2.0692,
+          [
+            1.9846,
+            2.1609
+          ]
+        ],
+        "post_O_light": [
+          2.4599,
+          [
+            2.3924,
+            2.5434
+          ]
+        ],
+        "post_O_heavy": [
+          2.0591,
+          [
+            1.9702,
+            2.1549
+          ]
+        ]
+      },
+      "raw_gap_ci": {
+        "dO_ci95": [
+          -0.0398,
+          0.0093
+        ],
+        "retreat_ci95": [
+          0.0283,
+          0.05
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "max_abs_smd_bots": 1.1633,
+    "selection_present_smd_ge_0.10": true,
+    "selection_strong_smd_ge_0.25": true,
+    "dose_effect_on_dO_survives_adjustment_and_matching": false,
+    "dose_effect_on_retreat_survives": true,
+    "text": "Pre-event covariates are STRONGLY imbalanced across doses (max |SMD| = 1.163 >= 0.25): selection into heavy friction is real, and the matched/adjusted estimates are the paper numbers. The heavy-dose gap does NOT clearly survive adjustment: raw -0.1561, adjusted +0.1325 (95% CI [0.0919, 0.1737]), matched +0.1692 (95% CI [-0.2438, 0.2791]) \u2014 treat the frontier as descriptive, not causal. Retreat dose gap: raw -0.0681, adjusted +0.0687 (95% CI [0.0608, 0.0767]), matched +0.0399 (95% CI [0.033, 0.0459])."
+  }
+}
