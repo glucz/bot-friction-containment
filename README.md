@@ -1,4 +1,4 @@
-# Paper D — verification and provenance bundle
+# Verification and provenance bundle
 
 Analysis code and derived artifacts for *Keeping Agentic Traffic Under Control Where Aggressive
 Blocking Fails*. Every number the manuscripts quote is a field in one of the artifacts below,
