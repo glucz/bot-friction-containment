@@ -73,7 +73,7 @@ def _write_report(results: dict, labels: list[str]) -> None:
         L.append("")
 
     b = results.get("B_filter_response", {})
-    L.append("## C2 -- bots respond to filters (Analysis B, the causal core)\n")
+    L.append("## C2 -- bots respond to filters (Analysis B; association, not cause)\n")
     L.append("Difference-in-differences vs. the verified-human control, around filter-pressure events "
              "(days the agent's non-200 share spikes above its own baseline).\n")
     nz = b.get("normalized_response_did", {})

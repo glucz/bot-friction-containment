@@ -1,0 +1,27 @@
+{
+  "tau_A": 4,
+  "tau_D": 5,
+  "loop_delay_days": 9,
+  "k_crit": 1.2,
+  "tuned_f_target": 0.9999999999999998,
+  "stable": {
+    "k": 0.6,
+    "L_D_mean": 10399.815319217754,
+    "human_harm_mean": 1910.8081397028993,
+    "observed_mean": 4295.234045276798,
+    "amplitude": 0.001285352446669663,
+    "period_days": 40.0
+  },
+  "unstable": {
+    "k": 2.4,
+    "L_D_mean": 12385.896142588348,
+    "human_harm_mean": 2861.520844121611,
+    "observed_mean": 6382.376608830018,
+    "amplitude": 0.7475610816902432,
+    "period_days": 26.666666666666668
+  },
+  "loss_penalty_pct": 19.1,
+  "harm_penalty_pct": 49.8,
+  "dashboard_ratio": 1.4859,
+  "period_over_loop_delay": 2.96
+}

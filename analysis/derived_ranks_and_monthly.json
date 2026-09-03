@@ -1,0 +1,40 @@
+{
+  "grid_n": 180,
+  "balanced_analogue": {
+    "did": -0.35314630583547596,
+    "n_bot": 817,
+    "n_ctrl": 148,
+    "percentile_in_grid": 85.0,
+    "note": "the grid cell matching the submitted choices; a member of the grid"
+  },
+  "full_event_headline": {
+    "did": -0.3641030502219128,
+    "n_bot": 854,
+    "n_ctrl": 150,
+    "percentile_in_grid": 82.77777777777777,
+    "note": "the submitted estimate, from combined_numbers_of_record.json. It is NOT a member of this grid -- the grid requires a balanced +/-10 panel -- so this rank says where it would fall, not where it sits."
+  },
+  "monthly": {
+    "bot": {
+      "n_months": 46,
+      "slope_per_month": 0.002342793212946353,
+      "slope_per_month_excluding_last": -0.021817738076479142,
+      "sign_reverses": true,
+      "last_month": "2023-03"
+    },
+    "control": {
+      "n_months": 46,
+      "slope_per_month": 0.005221758434594122,
+      "slope_per_month_excluding_last": 0.006075587796540645,
+      "sign_reverses": false,
+      "last_month": "2023-03"
+    },
+    "other": {
+      "n_months": 46,
+      "slope_per_month": -0.011154772955650667,
+      "slope_per_month_excluding_last": -0.012989139358013014,
+      "sign_reverses": false,
+      "last_month": "2023-03"
+    }
+  }
+}

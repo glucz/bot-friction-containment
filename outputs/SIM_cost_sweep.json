@@ -22,34 +22,34 @@
         "L_D_idx": 98.9
       },
       "throttle": {
-        "extraction": 7753.249271596729,
+        "extraction": 7819.721799321436,
         "human_harm": 3483.0,
-        "evasion_share": 0.4968000634661048,
-        "observed": 3383.2435411799847,
-        "L_D": 12617.596994681788,
-        "extraction_idx": 64.7,
-        "observed_idx": 28.2,
-        "L_D_idx": 105.3
+        "evasion_share": 0.5240803328876591,
+        "observed": 3153.5277880479316,
+        "L_D": 12759.159964917235,
+        "extraction_idx": 65.3,
+        "observed_idx": 26.3,
+        "L_D_idx": 106.5
       },
       "graded": {
-        "extraction": 10713.167884675517,
-        "human_harm": 245.7,
-        "evasion_share": 0.0,
-        "observed": 10713.167884675517,
-        "L_D": 11125.832611020915,
-        "extraction_idx": 89.4,
-        "observed_idx": 89.4,
-        "L_D_idx": 92.9
+        "extraction": 8189.614373256838,
+        "human_harm": 2005.3,
+        "evasion_share": 0.4475386813594017,
+        "observed": 4239.491440724283,
+        "L_D": 11359.342568583881,
+        "extraction_idx": 68.4,
+        "observed_idx": 35.4,
+        "L_D_idx": 94.8
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.35,
+      "ceiling": 0.9999999999999998,
       "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.092
+    "graded_vs_binary_harm_ratio": 0.749
   },
   "c_E=0.35 (base)": {
     "policies": {
@@ -74,34 +74,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 3483.0,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 11546.699025786273,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 96.4
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 11629.518876154725,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 97.1
       },
       "graded": {
-        "extraction": 7949.480615332011,
-        "human_harm": 1283.4,
-        "evasion_share": 0.37593268178986133,
-        "observed": 4803.496706491603,
-        "L_D": 10165.632242286449,
-        "extraction_idx": 66.3,
-        "observed_idx": 40.1,
-        "L_D_idx": 84.8
+        "extraction": 7403.2225501236735,
+        "human_harm": 1948.5,
+        "evasion_share": 0.38570610317532,
+        "observed": 4293.694722575481,
+        "L_D": 10341.746915512345,
+        "extraction_idx": 61.8,
+        "observed_idx": 35.8,
+        "L_D_idx": 86.3
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.7999999999999998,
-      "width": 0.05
+      "ceiling": 0.9999999999999998,
+      "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.479
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "c_E=0.5": {
     "policies": {
@@ -126,34 +126,34 @@
         "L_D_idx": 82.6
       },
       "throttle": {
-        "extraction": 6021.205724864444,
+        "extraction": 6043.668222077658,
         "human_harm": 3483.0,
-        "evasion_share": 0.3016497444292408,
-        "observed": 3913.44455752202,
-        "L_D": 10338.831986074994,
-        "extraction_idx": 50.3,
-        "observed_idx": 32.7,
-        "L_D_idx": 86.3
+        "evasion_share": 0.3098259569487863,
+        "observed": 3861.559569056345,
+        "L_D": 10379.957341288535,
+        "extraction_idx": 50.4,
+        "observed_idx": 32.2,
+        "L_D_idx": 86.6
       },
       "graded": {
-        "extraction": 7966.220758672006,
-        "human_harm": 721.9,
+        "extraction": 8201.793140783357,
+        "human_harm": 663.0,
         "evasion_share": 0.0,
-        "observed": 7966.220758672006,
-        "L_D": 8894.336988286137,
-        "extraction_idx": 66.5,
-        "observed_idx": 66.5,
-        "L_D_idx": 74.2
+        "observed": 8201.793140783357,
+        "L_D": 9068.979858248766,
+        "extraction_idx": 68.5,
+        "observed_idx": 68.5,
+        "L_D_idx": 75.7
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.5999999999999999,
+      "ceiling": 0.575,
       "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.27
+    "graded_vs_binary_harm_ratio": 0.248
   },
   "rho=0.2": {
     "policies": {
@@ -178,34 +178,34 @@
         "L_D_idx": 98.8
       },
       "throttle": {
-        "extraction": 7694.684738419312,
+        "extraction": 7731.413307589517,
         "human_harm": 3483.0,
-        "evasion_share": 0.47256404570673904,
-        "observed": 3590.7850909481745,
-        "L_D": 12484.814821815344,
-        "extraction_idx": 64.2,
-        "observed_idx": 30.0,
-        "L_D_idx": 104.2
+        "evasion_share": 0.47941083519184835,
+        "observed": 3537.6033323754737,
+        "L_D": 12544.089423539544,
+        "extraction_idx": 64.5,
+        "observed_idx": 29.5,
+        "L_D_idx": 104.7
       },
       "graded": {
-        "extraction": 9914.621731197,
-        "human_harm": 362.2,
+        "extraction": 10451.270075357685,
+        "human_harm": 282.0,
         "evasion_share": 0.0,
-        "observed": 9914.621731197,
-        "L_D": 10463.01697534111,
-        "extraction_idx": 82.8,
-        "observed_idx": 82.8,
-        "L_D_idx": 87.3
+        "observed": 10451.270075357685,
+        "L_D": 10907.39246654723,
+        "extraction_idx": 87.2,
+        "observed_idx": 87.2,
+        "L_D_idx": 91.0
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.42499999999999993,
+      "ceiling": 0.375,
       "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.135
+    "graded_vs_binary_harm_ratio": 0.105
   },
   "rho=0.3 (base)": {
     "policies": {
@@ -230,34 +230,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 3483.0,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 11546.699025786273,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 96.4
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 11629.518876154725,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 97.1
       },
       "graded": {
-        "extraction": 7949.480615332011,
-        "human_harm": 1283.4,
-        "evasion_share": 0.37593268178986133,
-        "observed": 4803.496706491603,
-        "L_D": 10165.632242286449,
-        "extraction_idx": 66.3,
-        "observed_idx": 40.1,
-        "L_D_idx": 84.8
+        "extraction": 7403.2225501236735,
+        "human_harm": 1948.5,
+        "evasion_share": 0.38570610317532,
+        "observed": 4293.694722575481,
+        "L_D": 10341.746915512345,
+        "extraction_idx": 61.8,
+        "observed_idx": 35.8,
+        "L_D_idx": 86.3
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.7999999999999998,
-      "width": 0.05
+      "ceiling": 0.9999999999999998,
+      "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.479
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "rho=0.45": {
     "policies": {
@@ -282,34 +282,34 @@
         "L_D_idx": 82.7
       },
       "throttle": {
-        "extraction": 6053.080044686189,
+        "extraction": 6088.7080309116645,
         "human_harm": 3483.0,
-        "evasion_share": 0.31449393563793737,
-        "observed": 3828.398071309726,
-        "L_D": 10418.366256247622,
-        "extraction_idx": 50.5,
-        "observed_idx": 32.0,
-        "L_D_idx": 87.0
+        "evasion_share": 0.33144893536521153,
+        "observed": 3711.4143564742967,
+        "L_D": 10495.02949858069,
+        "extraction_idx": 50.8,
+        "observed_idx": 31.0,
+        "L_D_idx": 87.6
       },
       "graded": {
-        "extraction": 6630.198351171546,
-        "human_harm": 1852.3,
-        "evasion_share": 0.2907908149479084,
-        "observed": 4562.9691491777085,
-        "L_D": 9237.747482292714,
-        "extraction_idx": 55.3,
-        "observed_idx": 38.1,
-        "L_D_idx": 77.1
+        "extraction": 6604.2746680449645,
+        "human_harm": 1948.5,
+        "evasion_share": 0.30522762927825303,
+        "observed": 4409.669437930713,
+        "L_D": 9342.072314479225,
+        "extraction_idx": 55.1,
+        "observed_idx": 36.8,
+        "L_D_idx": 78.0
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.9749999999999999,
+      "ceiling": 0.9999999999999998,
       "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.692
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "K_E=0.25": {
     "policies": {
@@ -334,34 +334,34 @@
         "L_D_idx": 93.0
       },
       "throttle": {
-        "extraction": 7078.704874455365,
+        "extraction": 7133.042991654192,
         "human_harm": 3483.0,
-        "evasion_share": 0.42889436197809555,
-        "observed": 3662.2969571288168,
-        "L_D": 11711.05019908291,
-        "extraction_idx": 59.1,
-        "observed_idx": 30.6,
-        "L_D_idx": 97.7
+        "evasion_share": 0.44223356084128496,
+        "observed": 3565.7614767026735,
+        "L_D": 11801.327738963899,
+        "extraction_idx": 59.5,
+        "observed_idx": 29.8,
+        "L_D_idx": 98.5
       },
       "graded": {
-        "extraction": 9531.021908356135,
-        "human_harm": 454.3,
+        "extraction": 9914.621731197,
+        "human_harm": 362.2,
         "evasion_share": 0.0,
-        "observed": 9531.021908356135,
-        "L_D": 10219.106034205872,
-        "extraction_idx": 79.5,
-        "observed_idx": 79.5,
-        "L_D_idx": 85.3
+        "observed": 9914.621731197,
+        "L_D": 10463.01697534111,
+        "extraction_idx": 82.8,
+        "observed_idx": 82.8,
+        "L_D_idx": 87.3
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.4749999999999999,
-      "width": 0.12
+      "ceiling": 0.42499999999999993,
+      "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.17
+    "graded_vs_binary_harm_ratio": 0.135
   },
   "K_E=0.5 (base)": {
     "policies": {
@@ -386,34 +386,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 3483.0,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 11546.699025786273,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 96.4
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 11629.518876154725,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 97.1
       },
       "graded": {
-        "extraction": 7949.480615332011,
-        "human_harm": 1283.4,
-        "evasion_share": 0.37593268178986133,
-        "observed": 4803.496706491603,
-        "L_D": 10165.632242286449,
-        "extraction_idx": 66.3,
-        "observed_idx": 40.1,
-        "L_D_idx": 84.8
+        "extraction": 7403.2225501236735,
+        "human_harm": 1948.5,
+        "evasion_share": 0.38570610317532,
+        "observed": 4293.694722575481,
+        "L_D": 10341.746915512345,
+        "extraction_idx": 61.8,
+        "observed_idx": 35.8,
+        "L_D_idx": 86.3
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.7999999999999998,
-      "width": 0.05
+      "ceiling": 0.9999999999999998,
+      "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.479
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "K_E=1.0": {
     "policies": {
@@ -438,34 +438,34 @@
         "L_D_idx": 89.9
       },
       "throttle": {
-        "extraction": 6797.993411409772,
+        "extraction": 6846.32220921599,
         "human_harm": 3483.0,
-        "evasion_share": 0.38579824685462355,
-        "observed": 3701.4537065671516,
-        "L_D": 11370.12953449546,
-        "extraction_idx": 56.7,
-        "observed_idx": 30.9,
-        "L_D_idx": 94.9
+        "evasion_share": 0.3978415227940112,
+        "observed": 3613.366591751086,
+        "L_D": 11452.76927599142,
+        "extraction_idx": 57.1,
+        "observed_idx": 30.2,
+        "L_D_idx": 95.6
       },
       "graded": {
-        "extraction": 7715.291781523206,
-        "human_harm": 1448.9,
-        "evasion_share": 0.35101291296841136,
-        "observed": 4804.540186979822,
-        "L_D": 10071.587257877474,
-        "extraction_idx": 64.4,
-        "observed_idx": 40.1,
-        "L_D_idx": 84.1
+        "extraction": 7269.788955654477,
+        "human_harm": 1948.5,
+        "evasion_share": 0.36346991528375805,
+        "observed": 4323.914202310509,
+        "L_D": 10185.396140784453,
+        "extraction_idx": 60.7,
+        "observed_idx": 36.1,
+        "L_D_idx": 85.0
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.8499999999999999,
-      "width": 0.05
+      "ceiling": 0.9999999999999998,
+      "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.541
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "q=1.0": {
     "policies": {
@@ -490,34 +490,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 5447.9,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 13511.633681730762,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 112.8
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 13594.453532099214,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 113.5
       },
       "graded": {
-        "extraction": 9629.099421480492,
-        "human_harm": 1462.6,
+        "extraction": 9914.621731197,
+        "human_harm": 1381.4,
         "evasion_share": 0.0,
-        "observed": 9629.099421480492,
-        "L_D": 11282.615583384626,
-        "extraction_idx": 80.4,
-        "observed_idx": 80.4,
-        "L_D_idx": 94.2
+        "observed": 9914.621731197,
+        "L_D": 11482.18693430331,
+        "extraction_idx": 82.8,
+        "observed_idx": 82.8,
+        "L_D_idx": 95.8
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.44999999999999996,
+      "ceiling": 0.42499999999999993,
       "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": false,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.546
+    "graded_vs_binary_harm_ratio": 0.516
   },
   "q=1.5": {
     "policies": {
@@ -542,34 +542,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 4234.2,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 12297.955031815469,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 102.6
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 12380.774882183921,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 103.3
       },
       "graded": {
-        "extraction": 9629.099421480492,
-        "human_harm": 735.3,
+        "extraction": 9914.621731197,
+        "human_harm": 674.9,
         "evasion_share": 0.0,
-        "observed": 9629.099421480492,
-        "L_D": 10555.277224464277,
-        "extraction_idx": 80.4,
-        "observed_idx": 80.4,
-        "L_D_idx": 88.1
+        "observed": 9914.621731197,
+        "L_D": 10775.690270513434,
+        "extraction_idx": 82.8,
+        "observed_idx": 82.8,
+        "L_D_idx": 89.9
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.44999999999999996,
+      "ceiling": 0.42499999999999993,
       "width": 0.05
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.275
+    "graded_vs_binary_harm_ratio": 0.252
   },
   "q=2.0 (base)": {
     "policies": {
@@ -594,34 +594,34 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 3483.0,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 11546.699025786273,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 96.4
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 11629.518876154725,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 97.1
       },
       "graded": {
-        "extraction": 7949.480615332011,
-        "human_harm": 1283.4,
-        "evasion_share": 0.37593268178986133,
-        "observed": 4803.496706491603,
-        "L_D": 10165.632242286449,
-        "extraction_idx": 66.3,
-        "observed_idx": 40.1,
-        "L_D_idx": 84.8
+        "extraction": 7403.2225501236735,
+        "human_harm": 1948.5,
+        "evasion_share": 0.38570610317532,
+        "observed": 4293.694722575481,
+        "L_D": 10341.746915512345,
+        "extraction_idx": 61.8,
+        "observed_idx": 35.8,
+        "L_D_idx": 86.3
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.7999999999999998,
-      "width": 0.05
+      "ceiling": 0.9999999999999998,
+      "width": 0.08
     },
     "throttle_worst_active_LD": true,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.479
+    "graded_vs_binary_harm_ratio": 0.728
   },
   "q=3.0": {
     "policies": {
@@ -646,33 +646,33 @@
         "L_D_idx": 91.5
       },
       "throttle": {
-        "extraction": 6950.497298655085,
+        "extraction": 6998.826096461304,
         "human_harm": 2635.4,
-        "evasion_share": 0.40969246846027285,
-        "observed": 3683.4350457698447,
-        "L_D": 10699.138791648089,
-        "extraction_idx": 58.0,
-        "observed_idx": 30.7,
-        "L_D_idx": 89.3
+        "evasion_share": 0.42227789004890687,
+        "observed": 3592.059551961127,
+        "L_D": 10781.95864201654,
+        "extraction_idx": 58.4,
+        "observed_idx": 30.0,
+        "L_D_idx": 90.0
       },
       "graded": {
-        "extraction": 7377.714719139146,
-        "human_harm": 1059.1,
-        "evasion_share": 0.37579088527334703,
-        "observed": 4352.652767936934,
-        "L_D": 9448.413616338932,
+        "extraction": 7375.535988598378,
+        "human_harm": 1142.7,
+        "evasion_share": 0.39325704684552176,
+        "observed": 4163.369467406525,
+        "L_D": 9583.49090455221,
         "extraction_idx": 61.6,
-        "observed_idx": 36.3,
-        "L_D_idx": 78.9
+        "observed_idx": 34.7,
+        "L_D_idx": 80.0
       }
     },
     "tuned_schedule": {
-      "ceiling": 0.9749999999999999,
+      "ceiling": 0.9999999999999998,
       "width": 0.12
     },
     "throttle_worst_active_LD": false,
     "graded_best_LD": true,
     "best_dashboard_is_throttle": true,
-    "graded_vs_binary_harm_ratio": 0.396
+    "graded_vs_binary_harm_ratio": 0.427
   }
 }

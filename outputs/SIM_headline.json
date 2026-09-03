@@ -1,18 +1,19 @@
 {
-  "f_switch": 0.8967441775617744,
+  "f_switch": 0.8855488076521755,
+  "f_switch_sunk": 0.4257274624408628,
   "f_min_at_vref": 0.5578607917351412,
   "sens": {
     "K_E_base": {
       "K_E": 0.5,
-      "f_switch": 0.8967441775617744,
-      "band_at_vref": 0.33888338582663313,
-      "v_collapse": 1.1190232532685267
+      "f_switch": 0.8855488076521755,
+      "band_at_vref": 0.3276880159170342,
+      "v_collapse": 1.0999999999999992
     },
     "K_E_half": {
       "K_E": 0.25,
-      "f_switch": 0.7059590189399146,
-      "band_at_vref": 0.1480982272047734,
-      "v_collapse": 0.8117877056819746
+      "f_switch": 0.6758002217303778,
+      "band_at_vref": 0.11793942999523654,
+      "v_collapse": 0.7666666666666666
     },
     "K_E_double": {
       "K_E": 1.0,
@@ -21,30 +22,30 @@
       "v_collapse": 1.3
     }
   },
-  "static_f_target": 0.7999999999999998,
-  "static_width": 0.05,
-  "k_crit": 1.0,
-  "k_stable": 0.5,
-  "k_unstable": 2.0,
-  "osc_period": 40.0,
-  "V_target": 4800.000000000001,
+  "static_f_target": 0.9999999999999998,
+  "static_width": 0.08,
+  "k_crit": 1.2,
+  "k_stable": 0.6,
+  "k_unstable": 2.4,
+  "osc_period": 26.666666666666668,
+  "V_target": 4293.694722575481,
   "retreat_check": {
-    "sim_light": 0.19866666666666666,
-    "sim_heavy": 0.3868333333333333,
-    "sim_evasion_light": 0.0,
-    "sim_evasion_heavy": 0.23291666666666666,
-    "measured_light": 0.141,
-    "measured_heavy": 0.073
+    "sim_light": 0.18125,
+    "sim_heavy": 0.3815,
+    "sim_evasion_light": 0.25666666666666665,
+    "sim_evasion_heavy": 0.2485,
+    "measured_light": 0.0984,
+    "measured_heavy": 0.0986
   },
   "ranking_main": [
-    "static_graded_ft0.80",
-    "adaptive_graded_k0.50",
+    "static_graded_ft1.00",
+    "adaptive_graded_k0.60",
     "binary_block_tau0.234",
     "aggressive_throttle_3b",
     "no_defense"
   ],
   "ranking_alt": [
-    "static_graded_ft0.47",
+    "static_graded_ft0.42",
     "binary_block_tau0.234",
     "aggressive_throttle_3b",
     "no_defense"

@@ -1,11 +1,12 @@
 """
 sim_friction_policy.py -- Calibrated policy simulation for this paper, Section 8.
 
-"Adversarial Friction Menus for Bot Containment: Graded Defense and the
- Overdeterrence Trap"
+"Keeping Agentic Traffic Under Control Where Aggressive Blocking Fails:
+ Evidence from Four Years of Web Traffic"
 
-Implements the Section 8 simulation with all measured parameters from
-Section 7.9 (AGWA corpus) and explicitly flagged assumed parameters.
+Implements the Section 8 simulation with the measured parameters from
+Sections 7.3-7.8 (AGWA corpus) and explicitly flagged assumed parameters.
+(Section 7.9 is Threats to Validity, not the source of the parameters.)
 
 HONESTY NOTE (also in SIM_SUMMARY.md): this simulation demonstrates the
 MODEL'S internal logic under measured delays and densities. It is NOT an
@@ -53,15 +54,28 @@ SEED = 42
 # ----------------------------------------------------------------------------
 P = {
     # --- measured (Section 7.9) ---
-    "tau_A": 7,        # attacker adaptation delay, days (measured, median)
+    "tau_A": 4,        # attacker adaptation delay, days (median on the
+                       # honeypot-share arm; not identified, sweep tau_A + tau_D)
     "tau_D": 5,        # defender reaction delay, days (measured)
-    "retreat_light": 0.141,   # measured retreat fraction, light friction
-    "retreat_heavy": 0.073,   # measured retreat fraction, heavy friction
-    "mix_visible": 0.22,      # measured initial strategy mix (bot class)
+    "retreat_light": 0.0984,  # retreat fraction, light friction, at event spacing 16 with
+                              # the block-insensitive baseline (the dose artifact of record,
+                              # abusive.retreat_light).
+    "retreat_heavy": 0.0986,  # ditto, abusive.retreat_heavy. The raw gradient is null: the
+                              # light/heavy gap is +0.005 with an interval spanning zero.
+                              # Both anchors are consistency checks, never fitted, and are
+                              # selection-confounded (Section 7.5).
+    "mix_visible": 0.22,      # ASSUMED initial strategy mix. The 0.22/0.78 pair came
+                              # from a mixture fitted to the DECLARED crawler set, whose
+                              # "evasive" component is assigned by network spread; it is
+                              # not a measurement of abusive automation. Swept in
+                              # sim_sweep_mix_evasive.py.
     "mix_evasive": 0.78,
     "vol_cv": 1.22,    # measured bot daily-volume CV
     "tau_op": 0.234,   # measured operating threshold of the classifier
-    "obs_collapse_did": -0.23,  # measured observability collapse (anchor for L_E)
+    "obs_collapse_did": -0.364,  # observability collapse on the 7,812-agent arm at event
+                                 # spacing 16 (-0.491 stealth-only); see POPULATIONS-KEY.md.
+                                 # Provenance only: NOT read anywhere in this file.
+                                 # L_E below is an assumed scale, not anchored to it.
     # --- attacker economics (assumed) ---
     "c0": 0.10,    # baseline visible-extraction unit cost
     "c1": 1.20,    # friction cost scale, visible
@@ -82,7 +96,7 @@ P = {
     "gamma_D": 0.05,  # infrastructure cost per unit friction-volume served
     "h": 1.00,        # human-harm scale, L_H = h * f^2 per unit human volume
     "e_D": 1.00,      # extraction loss per unit successfully extracted
-    "L_E": 0.25,      # fixed per-agent evasion-adaptation loss (anchored, see note)
+    "L_E": 0.25,      # fixed per-agent evasion-adaptation loss (ASSUMED scale)
     "H_budget": 0.25,  # per-user human-harm budget -> human-harm boundary f_H
     # --- population (assumed sizes; densities measured/assumed as flagged) ---
     "n_bots": 12000,
@@ -123,14 +137,22 @@ def f_min(vA: np.ndarray) -> np.ndarray:
 
 def f_switch(K_E: float) -> float:
     """U_E = U_V indifference at the volume cap:
-       c1 f^r - c2 rho f = K_E/X + c_E - c0.
+       c1 f^r - c2 rho f^r = K_E/X + c_E - c0.
+
+    The residual-friction term carries the SAME exponent r as the visible one,
+    which is the leading case the theory is stated in (supplement S.1). Before
+    2026-08-11 this line used a linear c2*rho*f, and that divergence made the
+    published landmarks irreproducible from the paper's own closed form and,
+    worse, made R1 false: kappa = X(v_A - c_E - c2 rho (v_A - c0)/c1) is
+    invariant to r only when f_min^r cancels, which needs g(f) = rho f^r.
+
     NOTE: with utilities linear in volume and a common cap, the indifference
     friction is independent of v_A (both utilities share the v_A*x term);
     the v_A dependence of the band's effective upper edge comes from the
     evasion-profitability boundary U_E = 0 (see containment map).
     Returns np.inf if no solution in (0, 1] (evasion never preferred)."""
     rhs = K_E / P["X"] + P["c_E"] - P["c0"]
-    g = lambda f: P["c1"] * f ** P["r"] - P["c2"] * P["rho"] * f - rhs
+    g = lambda f: (P["c1"] - P["c2"] * P["rho"]) * f ** P["r"] - rhs
     if g(1.0) < 0:
         return np.inf
     return float(brentq(g, 1e-9, 1.0))
@@ -142,7 +164,7 @@ def utilities(f, vA, X, sunk):
     f = np.asarray(f, float)
     uV = np.maximum(vA - P["c0"] - P["c1"] * f ** P["r"], 0.0) * X
     K = np.where(sunk, 0.0, P["K_E"])
-    uE = np.maximum(vA - P["c_E"] - P["c2"] * P["rho"] * f, 0.0) * X - K
+    uE = np.maximum(vA - P["c_E"] - P["c2"] * P["rho"] * f ** P["r"], 0.0) * X - K
     uC = np.maximum(vA - P["p_C"], 0.0) * X
     uR = np.zeros_like(uV)
     return np.stack([uV, uE, uC, uR], axis=0)
@@ -214,6 +236,11 @@ def eval_policy(phi, pop):
     retreat_share = float((s == S_R).mean())
     comply_share = float((s == S_C).mean())
     # infrastructure cost: friction actually delivered (evaders see rho*f)
+    # NOTE (2026-08-11): rho * f_bot here is the friction VOLUME the defender
+    # actually serves an evader (a level, for the infrastructure-cost term),
+    # not the attacker's cost of experiencing it. The attacker-side cost term
+    # carries the r exponent (see f_switch/utilities); this one deliberately
+    # does not, and it does not enter f_switch, kappa, R1 or A3.
     served_f = np.where(s == S_V, f_bot, np.where(s == S_E, P["rho"] * f_bot, 0.0))
     c_D = P["gamma_D"] * (float((served_f * X).sum()) + float(f_hum.sum()))
     l_H = P["h"] * float((f_hum ** 2).sum())
@@ -239,7 +266,7 @@ def tune_static(pop):
 
 
 # ----------------------------------------------------------------------------
-# Adaptive loop (daily, delays tau_D=5, tau_A=7, gain k_phi)
+# Adaptive loop (daily, delays tau_D=5, tau_A=4, gain k_phi)
 # ----------------------------------------------------------------------------
 def run_loop(pop, phi_base, k_phi, T=420, V_target=None, m0=0.0):
     """Defender scales the graded menu by m_t:
@@ -442,8 +469,8 @@ def stability_figure(pop, phi_base, V_target, k_lo, k_hi, fname):
         ax.set_ylim(-0.02, 1.05)
     axes[0].legend(fontsize=5, loc="upper right", framealpha=0.9)
     axes[1].set_xlabel("day", fontsize=7)
-    fig.suptitle("Friction-update loop: $\\tau_D=5$ d, $\\tau_A=7$ d (measured)",
-                 fontsize=8, y=0.995)
+    fig.suptitle("Friction-update loop: $\\tau_D=%d$ d, $\\tau_A=%d$ d (measured)"
+                 % (P["tau_D"], P["tau_A"]), fontsize=8, y=0.995)
     fig.tight_layout()
     fig.savefig(FIG / fname, bbox_inches="tight")
     plt.close(fig)
@@ -489,10 +516,18 @@ def main():
 
     # --- adaptive: critical gain --------------------------------------------
     static_metrics = eval_policy(phi_static, pop)
-    # dashboard target: drive observed visible bot volume to 40% of no-defense.
-    # (Targets below ~28% are unreachable: 38% of bot volume scores b < tau and
-    # receives ~zero friction under any monotone menu -- noted in the summary.)
-    V_target = 0.40 * float(pop["X"].sum())
+    # Dashboard target: the operating point the tuned static schedule actually
+    # holds, i.e. its own observed visible bot volume.
+    #
+    # Until 2026-08-11 this was a flat 0.40 * no-defense volume. That is an
+    # arbitrary round number, it is not what the tuned schedule delivers, and
+    # asking the loop to chase a level the menu cannot reach distorts the
+    # apparent critical gain. It also silently disagreed with
+    # sim_oscillation_cost.py, which has always used the policy's own operating
+    # point: under the pre-2026-08-11 cost form both happened to return
+    # k_crit = 1.3, so the divergence was invisible; under the corrected form
+    # they returned 0.7 and 1.2. One definition now, this one.
+    V_target = float(static_metrics["observed"])
     k_crit, amps = find_k_crit(pop, phi_static, V_target)
     k_stable = 0.5 * k_crit
     k_unstable = 2.0 * k_crit
@@ -535,7 +570,7 @@ def main():
     # --- containment map -------------------------------------------------------
     containment_map(pop, phi_static, "SIM_containment_map.png")
 
-    # --- retreat-fraction consistency check (vs measured 0.141 / 0.073) --------
+    # --- retreat-fraction consistency check (vs the 0.098 / 0.099 anchors) -----
     light = eval_policy(make_phi_graded(0.45, width=fw), pop)
     heavy = eval_policy(make_phi_graded(0.95, width=fw), pop)
     retreat_check = dict(sim_light=light["retreat_share"],
@@ -557,7 +592,7 @@ def main():
     tab2 = pd.DataFrame(rows2).T.sort_values("L_D")
 
     out = dict(
-        f_switch=fsw, f_min_at_vref=fmin_ref, sens=sens,
+        f_switch=fsw, f_switch_sunk=f_switch(0.0), f_min_at_vref=fmin_ref, sens=sens,
         static_f_target=ft, static_width=fw,
         k_crit=k_crit, k_stable=k_stable, k_unstable=k_unstable,
         osc_period=per, V_target=V_target,

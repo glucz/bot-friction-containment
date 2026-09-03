@@ -1,0 +1,48 @@
+{
+  "honeypot_join": {
+    "distinct_agents": 103038,
+    "null_total": 53144.0,
+    "explicit_zero": 11539.0,
+    "positive": 38355.0
+  },
+  "window_selection": [
+    {
+      "grp": "in_window",
+      "agents": 38355,
+      "mean_requests": 28130.0,
+      "mean_window_days": 532.7
+    },
+    {
+      "grp": "out_of_window",
+      "agents": 11539,
+      "mean_requests": 8345.0,
+      "mean_window_days": 237.7
+    }
+  ],
+  "roster_counts": {
+    "bot_hp": 35659,
+    "ctrl_hpneg": 5779,
+    "ctrl_white": 4605,
+    "labeled_pothuman": 2159,
+    "labeled_chrome": 1191,
+    "labeled_bot": 177
+  },
+  "curated_sizes": {
+    "declared": 177,
+    "verified": 200,
+    "pothuman": 2159
+  },
+  "extraction_cohort": {
+    "abusive": 35652,
+    "declared": 136,
+    "verified": 168,
+    "pothuman": 2001
+  },
+  "sampling": {
+    "whitelist_note": "ctrl_white is capped at WHITE_SAMPLE=5000 drawn from the qualifying set",
+    "hpneg_note": "ctrl_hpneg is sampled at HPNEG_SAMPLE=6000 from the explicit-zero pool"
+  },
+  "declared_intersect_honeypot_positive": 123,
+  "verified_intersect_honeypot_positive": 174,
+  "pothuman_intersect_honeypot_positive": 1497
+}

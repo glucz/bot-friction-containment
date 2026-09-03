@@ -1,0 +1,22 @@
+{
+  "npz_sha256": "5191c6294abc554ef24ee0523a3f43a9a509b7a91093dba1593b95894a48263c",
+  "roster_sha256": "116b6e9ac37e53883518570cb877fbfb07b4ff7ab7670ce5ae5b613196cdd95c",
+  "min_days": 20,
+  "features": [
+    "p404",
+    "robots_rate",
+    "log1p(hits)"
+  ],
+  "shapes": {
+    "mu_H": [
+      3
+    ],
+    "sigma_H": [
+      3
+    ],
+    "axis": [
+      3
+    ],
+    "bot_centroid_b": []
+  }
+}

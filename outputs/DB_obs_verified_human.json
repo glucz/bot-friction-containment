@@ -1,0 +1,31 @@
+{
+  "n_verified_ids": 200,
+  "n_verified_in_centroid": 181,
+  "n_bot_agents_with_events": 10959,
+  "n_verified_agents_with_events": 133,
+  "n_bot_events": 28384,
+  "n_verified_events": 1069,
+  "roster_roles_of_verified": {
+    "labeled_pothuman": 200
+  },
+  "contrast_only": {
+    "did": -0.27428938739950737,
+    "ci": [
+      -0.3439,
+      -0.2047
+    ],
+    "sig": true,
+    "bot": -0.2574,
+    "ctrl": 0.0169
+  },
+  "verified_centroid": {
+    "did": -0.2085789221816861,
+    "ci": [
+      -0.3033,
+      -0.1289
+    ],
+    "sig": true,
+    "bot": -0.1721,
+    "ctrl": 0.0365
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "source": "DB_rotation_pairs_v5.csv",
+  "n_envelope_pairs": 4207,
+  "bins": [
+    {
+      "min_pop_lo": 0,
+      "min_pop_hi": 5,
+      "n_pairs": 20,
+      "n_deaths": 4,
+      "n_dates": 4,
+      "succ_dvol_mean": -0.09367878562341372,
+      "succ_dbot_mean": 0.16459181148997332
+    },
+    {
+      "min_pop_lo": 6,
+      "min_pop_hi": 25,
+      "n_pairs": 171,
+      "n_deaths": 11,
+      "n_dates": 11,
+      "succ_dvol_mean": -0.09453009865505095,
+      "succ_dbot_mean": 0.09932095773795918
+    },
+    {
+      "min_pop_lo": 26,
+      "min_pop_hi": 100,
+      "n_pairs": 575,
+      "n_deaths": 24,
+      "n_dates": 21,
+      "succ_dvol_mean": 0.00045528297147391113,
+      "succ_dbot_mean": 0.06455498998335885
+    },
+    {
+      "min_pop_lo": 101,
+      "min_pop_hi": null,
+      "n_pairs": 3441,
+      "n_deaths": 109,
+      "n_dates": 46,
+      "succ_dvol_mean": 0.6101328823359046,
+      "succ_dbot_mean": -0.06167337198203334
+    }
+  ],
+  "n_pairs_covered": 4207,
+  "n_pairs_uncovered": 0,
+  "n_pairs_double_counted": 0,
+  "exhaustive": true,
+  "source_sha256": "080ed5a7d74a5fcc1e02b1fd48e14bd388e1bd8976e90a643916df84fbb666ce",
+  "predefined_core": {
+    "definition": "min_pop <= 25 (CORE_POP), i.e. the first two bins",
+    "n_pairs": 191,
+    "n_deaths": 11,
+    "succ_dvol_mean": -0.09444095592922513,
+    "succ_dvol_ci_date_cluster": [
+      -0.4225452194209654,
+      0.3352921399051022
+    ]
+  },
+  "date_concentration": {
+    "date": "2022-02-10",
+    "n_pairs": 1532,
+    "share_of_envelope": 0.3642,
+    "succ_dvol_mean": 0.9652683141450836,
+    "without_that_date": {
+      "n_pairs": 2675,
+      "n_deaths": 92,
+      "n_dates": 57,
+      "succ_dvol_mean": 0.22538308634530657,
+      "succ_dvol_ci_date_cluster": [
+        -0.020503516964537276,
+        0.4845976963282017
+      ]
+    }
+  }
+}

@@ -54,6 +54,13 @@ COLUMNS = [
     "img", "html", "js", "php", "folder",
     "ip_ent", "dom_ent", "ctry_ent", "url_ent", "husource",
 ]
+# `husource` = per-day Hungarian share of the agent's source IPs, from the AGWA
+# `ip` table's `i_ccode` field ('HU'); each IP was geolocated individually when
+# the panel was built. Recorded here 2026-08-16 from the study author, because
+# the generator that wrote the per-agent TSVs is NOT in this research tree and
+# the column is otherwise undefined anywhere in the code. Any re-derivation of
+# the 14-feature input for agents that lack a TSV must reproduce it exactly, or
+# the resulting botness scores are not comparable with the published ones.
 
 # Behavioral features (everything except the time index and raw volume).
 PROPORTION_FEATURES = ["p404", "p200", "robots", "img", "html", "js", "php", "folder"]

@@ -1,0 +1,45 @@
+{
+  "loop_delay_days": 9,
+  "bound": "0 < k_phi * s < 2 sin(pi / (2(2*tau + 1)))",
+  "note": "closed-form consequences of Theorem 5 at the measured loop delay; the delay is the measured quantity and carries the identification limits of Section 7.6",
+  "cadence": [
+    {
+      "update_period_days": 1,
+      "delay_steps": 9,
+      "denominator": 38,
+      "safe_gain_budget": 0.1652,
+      "safe_gain_budget_pct": 16.5
+    },
+    {
+      "update_period_days": 2,
+      "delay_steps": 5,
+      "denominator": 22,
+      "safe_gain_budget": 0.2846,
+      "safe_gain_budget_pct": 28.5
+    },
+    {
+      "update_period_days": 3,
+      "delay_steps": 3,
+      "denominator": 14,
+      "safe_gain_budget": 0.445,
+      "safe_gain_budget_pct": 44.5
+    },
+    {
+      "update_period_days": 5,
+      "delay_steps": 2,
+      "denominator": 10,
+      "safe_gain_budget": 0.618,
+      "safe_gain_budget_pct": 61.8
+    },
+    {
+      "update_period_days": 9,
+      "delay_steps": 1,
+      "denominator": 6,
+      "safe_gain_budget": 1.0,
+      "safe_gain_budget_pct": 100.0
+    }
+  ],
+  "daily_budget": 0.1652,
+  "daily_budget_pct": 16.5,
+  "ratio_period_over_daily": 6.05
+}

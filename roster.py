@@ -61,7 +61,18 @@ def _whitelist_agents() -> list[int]:
 
 
 def _local_labeled() -> dict[int, str]:
-    """Original local files -> {a_id: 'labeled_<label>'}."""
+    """Original local files -> {a_id: 'labeled_<label>'}.
+
+    CAUTION (found 2026-08-02): last write wins. The 200 manually verified
+    `.human` agents were curated out of the `.pothuman` candidate pool, so each
+    owns both a `<id>.human` and a `<id>.pothuman` file; because config.CLASSES
+    iterates bot -> human -> chrome -> pothuman, all 200 end up tagged
+    `labeled_pothuman` and the strongest human control the project has is pooled
+    invisibly into the unverified candidate group. Analyses that key off
+    `is_control` are unaffected, but anything that wants the verified arm must
+    read `DATA_DIR/*.human` directly -- see db_analysis_obs_verified_human.py.
+    Left as-is deliberately so published roster-derived numbers stay reproducible.
+    """
     out = {}
     for label, pattern in config.CLASSES.items():
         for fp in glob.glob(str(config.DATA_DIR / pattern)):

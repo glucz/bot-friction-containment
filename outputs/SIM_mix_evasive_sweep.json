@@ -1,0 +1,243 @@
+{
+  "grid": [
+    0.2,
+    0.4,
+    0.6,
+    0.78,
+    0.9
+  ],
+  "rows": [
+    {
+      "mix_evasive": 0.2,
+      "tuned": {
+        "f_target": 0.9999999999999998,
+        "width": 0.08
+      },
+      "policies": {
+        "none": {
+          "extraction_idx": 100.0,
+          "observed_idx": 100.0,
+          "L_D_idx": 100.0,
+          "human_harm": 0.0,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.0015
+        },
+        "binary": {
+          "extraction_idx": 53.443641029867095,
+          "observed_idx": 38.319175149872436,
+          "L_D_idx": 79.46366926156311,
+          "human_harm": 2677.0,
+          "evasion_value_share": 0.25251413096676883,
+          "retreat_share": 0.49875
+        },
+        "throttle": {
+          "extraction_idx": 49.15940987764842,
+          "observed_idx": 32.20075176523518,
+          "L_D_idx": 83.68596698057318,
+          "human_harm": 3482.96597309411,
+          "evasion_value_share": 0.2772938058966496,
+          "retreat_share": 0.5450833333333334
+        },
+        "graded": {
+          "extraction_idx": 53.40531671918918,
+          "observed_idx": 37.789967713508794,
+          "L_D_idx": 74.21262754043755,
+          "human_harm": 1948.4834075921196,
+          "evasion_value_share": 0.25429764355227163,
+          "retreat_share": 0.4984166666666667
+        }
+      },
+      "best_dashboard_policy": "throttle",
+      "best_loss_policy": "graded",
+      "best_dashboard_is_not_best_loss": true,
+      "graded_beats_binary_on_harm": true,
+      "harm_ratio_graded_over_binary": 0.7278608171804706
+    },
+    {
+      "mix_evasive": 0.4,
+      "tuned": {
+        "f_target": 0.9999999999999998,
+        "width": 0.08
+      },
+      "policies": {
+        "none": {
+          "extraction_idx": 100.0,
+          "observed_idx": 100.0,
+          "L_D_idx": 100.0,
+          "human_harm": 0.0,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.0015
+        },
+        "binary": {
+          "extraction_idx": 56.54119578190066,
+          "observed_idx": 38.319175149872436,
+          "L_D_idx": 83.77409058492283,
+          "human_harm": 2677.0,
+          "evasion_value_share": 0.29316714632828034,
+          "retreat_share": 0.4608333333333333
+        },
+        "throttle": {
+          "extraction_idx": 52.44287965842087,
+          "observed_idx": 31.399116885660913,
+          "L_D_idx": 88.43884701587119,
+          "human_harm": 3482.96597309411,
+          "evasion_value_share": 0.3287931915558254,
+          "retreat_share": 0.50575
+        },
+        "graded": {
+          "extraction_idx": 56.30658594780417,
+          "observed_idx": 37.043276227330296,
+          "L_D_idx": 78.44360280391811,
+          "human_harm": 1948.4834075921196,
+          "evasion_value_share": 0.301269706163548,
+          "retreat_share": 0.46191666666666664
+        }
+      },
+      "best_dashboard_policy": "throttle",
+      "best_loss_policy": "graded",
+      "best_dashboard_is_not_best_loss": true,
+      "graded_beats_binary_on_harm": true,
+      "harm_ratio_graded_over_binary": 0.7278608171804706
+    },
+    {
+      "mix_evasive": 0.6,
+      "tuned": {
+        "f_target": 0.9999999999999998,
+        "width": 0.08
+      },
+      "policies": {
+        "none": {
+          "extraction_idx": 100.0,
+          "observed_idx": 100.0,
+          "L_D_idx": 100.0,
+          "human_harm": 0.0,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.0015
+        },
+        "binary": {
+          "extraction_idx": 59.58644369987779,
+          "observed_idx": 38.319175149872436,
+          "L_D_idx": 87.98551551375283,
+          "human_harm": 2677.0,
+          "evasion_value_share": 0.3322878724118759,
+          "retreat_share": 0.4246666666666667
+        },
+        "throttle": {
+          "extraction_idx": 55.651276352929976,
+          "observed_idx": 30.626067908291635,
+          "L_D_idx": 93.07849694608811,
+          "human_harm": 3482.96597309411,
+          "evasion_value_share": 0.3796428777742407,
+          "retreat_share": 0.46691666666666665
+        },
+        "graded": {
+          "extraction_idx": 59.2983052404356,
+          "observed_idx": 36.355634493719315,
+          "L_D_idx": 82.72902902223139,
+          "human_harm": 1948.4834075921196,
+          "evasion_value_share": 0.34750785365791603,
+          "retreat_share": 0.42625
+        }
+      },
+      "best_dashboard_policy": "throttle",
+      "best_loss_policy": "graded",
+      "best_dashboard_is_not_best_loss": true,
+      "graded_beats_binary_on_harm": true,
+      "harm_ratio_graded_over_binary": 0.7278608171804706
+    },
+    {
+      "mix_evasive": 0.78,
+      "tuned": {
+        "f_target": 0.9999999999999998,
+        "width": 0.08
+      },
+      "policies": {
+        "none": {
+          "extraction_idx": 100.0,
+          "observed_idx": 100.0,
+          "L_D_idx": 100.0,
+          "human_harm": 0.0,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.0015
+        },
+        "binary": {
+          "extraction_idx": 62.11443246736108,
+          "observed_idx": 38.319175149872436,
+          "L_D_idx": 91.49038916198009,
+          "human_harm": 2677.0,
+          "evasion_value_share": 0.3643044259777185,
+          "retreat_share": 0.3933333333333333
+        },
+        "throttle": {
+          "extraction_idx": 58.414694135361614,
+          "observed_idx": 29.980607769338,
+          "L_D_idx": 97.06410456968963,
+          "human_harm": 3482.96597309411,
+          "evasion_value_share": 0.42227789004890687,
+          "retreat_share": 0.43325
+        },
+        "graded": {
+          "extraction_idx": 61.78993090000365,
+          "observed_idx": 35.836704680614694,
+          "L_D_idx": 86.3159013481445,
+          "human_harm": 1948.4834075921196,
+          "evasion_value_share": 0.38570610317532,
+          "retreat_share": 0.39616666666666667
+        }
+      },
+      "best_dashboard_policy": "throttle",
+      "best_loss_policy": "graded",
+      "best_dashboard_is_not_best_loss": true,
+      "graded_beats_binary_on_harm": true,
+      "harm_ratio_graded_over_binary": 0.7278608171804706
+    },
+    {
+      "mix_evasive": 0.9,
+      "tuned": {
+        "f_target": 0.42499999999999993,
+        "width": 0.05
+      },
+      "policies": {
+        "none": {
+          "extraction_idx": 100.0,
+          "observed_idx": 100.0,
+          "L_D_idx": 100.0,
+          "human_harm": 0.0,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.0015
+        },
+        "binary": {
+          "extraction_idx": 64.14953923931701,
+          "observed_idx": 38.319175149872436,
+          "L_D_idx": 94.27798232892467,
+          "human_harm": 2677.0,
+          "evasion_value_share": 0.3907523510482991,
+          "retreat_share": 0.36983333333333335
+        },
+        "throttle": {
+          "extraction_idx": 60.53728273279756,
+          "observed_idx": 29.32655358528918,
+          "L_D_idx": 100.13266090596697,
+          "human_harm": 3482.96597309411,
+          "evasion_value_share": 0.4580584828241687,
+          "retreat_share": 0.40841666666666665
+        },
+        "graded": {
+          "extraction_idx": 82.75096250619981,
+          "observed_idx": 82.75096250619981,
+          "L_D_idx": 87.3280644387885,
+          "human_harm": 362.21362514157084,
+          "evasion_value_share": 0.0,
+          "retreat_share": 0.17566666666666667
+        }
+      },
+      "best_dashboard_policy": "throttle",
+      "best_loss_policy": "graded",
+      "best_dashboard_is_not_best_loss": true,
+      "graded_beats_binary_on_harm": true,
+      "harm_ratio_graded_over_binary": 0.13530579945520016
+    }
+  ],
+  "robust_best_dashboard_never_best_loss": true,
+  "robust_graded_beats_binary_on_harm": true
+}

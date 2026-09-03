@@ -1,0 +1,32 @@
+{
+  "tables": {
+    "current_cache_spacing5": {
+      "file": "DB_per_agent_cachenow_sp5.csv",
+      "cache_vintage": "current",
+      "spacing": 5,
+      "n_events": 57886,
+      "n_agents": 49179,
+      "n_agents_with_event": 14718
+    },
+    "current_cache_spacing11": {
+      "file": "DB_per_agent_spacing11.csv",
+      "cache_vintage": "current",
+      "spacing": 11,
+      "n_events": 42132,
+      "n_agents": 49179,
+      "n_agents_with_event": 14280
+    }
+  },
+  "comparisons": {
+    "spacing_only_5_to_11": {
+      "from": "current_cache_spacing5",
+      "to": "current_cache_spacing11",
+      "events_from": 57886,
+      "events_to": 42132,
+      "events_dropped": 15754,
+      "pct_dropped": 27.22,
+      "isolates_spacing": true,
+      "note": "cache held fixed, so the difference is the spacing rule and nothing else. This is the figure the article quotes."
+    }
+  }
+}

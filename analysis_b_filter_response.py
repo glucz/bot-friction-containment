@@ -1,7 +1,9 @@
 """
 Analysis B -- Filter-response event study  (supports sub-claim C2: "respond to filters")
 
-This is the causal core of the empirical case. For each agent we locate
+This is the central contrast of the empirical case, and it is an association rather
+than an identified cause: events are agent-local, not a dated policy change. For each
+agent we locate
 *filter-pressure events* (active days where the non-200 share spikes above the
 agent's own baseline -- the agent hitting a wall) and measure how its behavior
 changes in the window AFTER the event versus BEFORE.

@@ -1,0 +1,1902 @@
+[
+  {
+    "note": "sup fresh union agents",
+    "field": "contain:shares.per_agent_X|fresh|f_le_1.agents_pct",
+    "rendered": "14.2%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup fresh union value",
+    "field": "contain:shares.per_agent_X|fresh|f_le_1.value_pct",
+    "rendered": "43.1%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup fresh fH value",
+    "field": "contain:shares.per_agent_X|fresh|f_le_fH.value_pct",
+    "rendered": "79.4%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup fresh fH agents",
+    "field": "contain:shares.X_eq_1|fresh|f_le_fH.agents_pct",
+    "rendered": "58.4%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup as-drawn fH agents",
+    "field": "contain:shares.X_eq_1|as_drawn|f_le_fH.agents_pct",
+    "rendered": "65.6%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup as-drawn fH value",
+    "field": "contain:shares.per_agent_X|as_drawn|f_le_fH.value_pct",
+    "rendered": "84.0%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup uncontainable agents",
+    "field": "contain:shares.per_agent_X|as_drawn|f_le_1.agents_pct",
+    "rendered": "37.2%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup uncontainable value",
+    "field": "contain:shares.per_agent_X|as_drawn|f_le_1.value_pct",
+    "rendered": "62.5%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup visible-only",
+    "field": "contain:shares.branch|fresh|f_le_fH|visible_only.agents_pct",
+    "rendered": "42.8%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup visible branch",
+    "field": "contain:shares.branch|fresh|f_le_1|visible_only.agents_pct",
+    "rendered": "3.9%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup evasion branch",
+    "field": "contain:shares.branch|fresh|f_le_1|evasion_only.agents_pct",
+    "rendered": "4.3%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup beyond v* agents",
+    "field": "contain:v_collapse_share.agents_pct",
+    "rendered": "15.5%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup beyond v* value",
+    "field": "contain:v_collapse_share.value_pct",
+    "rendered": "35.2%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup volume below beta",
+    "field": "contain:bot_volume_below_beta_pct",
+    "rendered": "38.3%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup sunk share",
+    "field": "contain:sunk_share",
+    "rendered": "77.4%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup oscillation loss",
+    "field": "sim_osc:loss_penalty_pct",
+    "rendered": "19.1%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sup oscillation harm",
+    "field": "sim_osc:harm_penalty_pct",
+    "rendered": "49.8%",
+    "surfaces": [
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "beyond v* agents",
+    "field": "contain:v_collapse_share.agents_pct",
+    "rendered": "15.5%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "beyond v* value mass",
+    "field": "contain:v_collapse_share.value_pct",
+    "rendered": "35.2%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "fresh escaping value",
+    "field": "contain:shares.per_agent_X|fresh|f_le_1.value_pct",
+    "rendered": "43.1%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "assumed sunk share",
+    "field": "contain:sunk_share",
+    "rendered": "77.4%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance rate at one year",
+    "field": "disap:followup.4.pct",
+    "rendered": "0.6%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "daily safe-gain budget",
+    "field": "cadence:cadence.0.safe_gain_budget",
+    "rendered": "0.165",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "2-day safe-gain budget",
+    "field": "cadence:cadence.1.safe_gain_budget",
+    "rendered": "0.285",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "3-day safe-gain budget",
+    "field": "cadence:cadence.2.safe_gain_budget",
+    "rendered": "0.445",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "5-day safe-gain budget",
+    "field": "cadence:cadence.3.safe_gain_budget",
+    "rendered": "0.618",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "daily budget as a percentage",
+    "field": "cadence:daily_budget_pct",
+    "rendered": "16.5%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "analytic human mass above beta",
+    "field": "contain:human_mass_above_beta_pct_analytic",
+    "rendered": "22.2%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "as-drawn escaping value",
+    "field": "contain:shares.per_agent_X|as_drawn|f_le_1.value_pct",
+    "rendered": "62.5%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "bot volume below beta",
+    "field": "contain:bot_volume_below_beta_pct",
+    "rendered": "38.3%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance agent denominator",
+    "field": "disap:abusive.agents_with_events",
+    "rendered": "1,217",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "quiet-five returners",
+    "field": "disap:quiet5.returned",
+    "rendered": "348",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "quiet-five risk set",
+    "field": "disap:quiet5.n",
+    "rendered": "366",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "robots abusive share (MX)",
+    "field": "robots:populations.abusive.pct_ever_robots",
+    "rendered": "3.5%",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "heavy events matched",
+    "field": "dose:populations.abusive.n_matched",
+    "rendered": "985",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "heavy events",
+    "field": "dose:populations.abusive.n_heavy",
+    "rendered": "1,004",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "active responder share",
+    "field": "leadlag:populations.abusive.active.responder_share",
+    "rendered": "37.7%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "calendar responder share",
+    "field": "leadlag:populations.abusive.calendar.responder_share",
+    "rendered": "45.2%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "pothuman responder share",
+    "field": "leadlag:populations.pothuman.null.responder_share.obs",
+    "rendered": "48.9%",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "largest date share",
+    "field": "rot_ip:transfer_core.largest_date_share_of_pairs",
+    "rendered": "20.4%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "retreat sweep events",
+    "field": "retreatcut:n_events.abusive",
+    "rendered": "2,906",
+    "surfaces": [],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "429 responses",
+    "field": "branch:arm_of_record.responses_429",
+    "rendered": "680",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "401/403 responses",
+    "field": "branch:arm_of_record.responses_401_403",
+    "rendered": "1,390,652",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "429-branch events",
+    "field": "branch:arm_of_record.events_429_branch_only",
+    "rendered": "114",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "branch event days",
+    "field": "branch:arm_of_record.events_total",
+    "rendered": "8,639",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "both-branch days",
+    "field": "branch:arm_of_record.events_both_same_day",
+    "rendered": "10",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "429-branch weight",
+    "field": "branch:arm_of_record.pct_events_from_429_branch_only",
+    "rendered": "1.32%",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "429-branch weight (D)",
+    "field": "branch:arm_of_record.pct_events_from_429_branch_only",
+    "rendered": "1.3%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "429-touching weight",
+    "field": "branch:arm_of_record.pct_events_touching_429_branch",
+    "rendered": "1.44%",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "agents ever blocked",
+    "field": "branch:arm_of_record.agents_ever_blocked",
+    "rendered": "1,810",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "blocked share",
+    "field": "branch:arm_of_record.pct_agents_ever_blocked",
+    "rendered": "23.17%",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "largest-agent share",
+    "field": "branch:arm_of_record.largest_agent_block_share_pct",
+    "rendered": "18.0%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "headline DiD",
+    "field": "combined:did_combined.did",
+    "rendered": "\u22120.364",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "headline bots",
+    "field": "combined:did_combined.n_bot",
+    "rendered": "854",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "headline controls",
+    "field": "combined:did_combined.n_ctrl",
+    "rendered": "150",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "stealth-only",
+    "field": "combined:did_combined_stealth.did",
+    "rendered": "\u22120.491",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "sensitivity arm",
+    "field": "combined:did_combined_pothuman.did",
+    "rendered": "\u22120.397",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "grid size",
+    "field": "grid:summary.n_specs",
+    "rendered": "180",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/D-v53-highlights.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "segmented estimator",
+    "field": "grid:window_free.SEGMENTED.did",
+    "rendered": "\u22120.229",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "segmented CI lo",
+    "field": "grid:window_free.SEGMENTED.ci.0",
+    "rendered": "\u22120.405",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "segmented CI hi",
+    "field": "grid:window_free.SEGMENTED.ci.1",
+    "rendered": "\u22120.040",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "pretrend estimator",
+    "field": "grid:window_free.FULL_PRE_LINEAR.did",
+    "rendered": "\u22120.177",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "pretrend CI lo",
+    "field": "grid:window_free.FULL_PRE_LINEAR.ci.0",
+    "rendered": "\u22120.474",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "pretrend CI hi",
+    "field": "grid:window_free.FULL_PRE_LINEAR.ci.1",
+    "rendered": "0.109",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "balanced analogue",
+    "field": "ranks:balanced_analogue.did",
+    "rendered": "\u22120.353",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance rate",
+    "field": "disap:abusive.pct",
+    "rendered": "0.70%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/D-v53-highlights.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearances",
+    "field": "disap:abusive.gone",
+    "rendered": "18",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "event-time bots",
+    "field": "etime:abusive.n_agents",
+    "rendered": "881",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "event-time events",
+    "field": "etime:abusive.n_events",
+    "rendered": "2,362",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "event-time controls",
+    "field": "etime:verified.n_agents",
+    "rendered": "149",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose adjusted gap",
+    "field": "dose:populations.abusive.adjusted_gap",
+    "rendered": "+0.756",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose adjusted retreat",
+    "field": "dose:populations.abusive.adjusted_retreat",
+    "rendered": "+0.069 | +6.9",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "control adjusted retreat",
+    "field": "dose:populations.verified.adjusted_retreat",
+    "rendered": "+0.131 | +13.1",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose events",
+    "field": "dose:populations.abusive.n_events",
+    "rendered": "2,081",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose raw gap",
+    "field": "dose:populations.abusive.raw_gap",
+    "rendered": "+0.179",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose matched gap",
+    "field": "dose:populations.abusive.matched_gap",
+    "rendered": "+0.630",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose matched retreat",
+    "field": "dose:populations.abusive.matched_retreat",
+    "rendered": "+0.025 | +2.5",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "control matched retreat",
+    "field": "dose:populations.verified.matched_retreat",
+    "rendered": "+0.146 | +14.6",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose retreat light",
+    "field": "dose:populations.abusive.retreat_light",
+    "rendered": "0.098",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md",
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose retreat heavy",
+    "field": "dose:populations.abusive.retreat_heavy",
+    "rendered": "0.099",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md",
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dose control events",
+    "field": "dose:populations.verified.n_events",
+    "rendered": "801",
+    "surfaces": [
+      "draft/MX-v40.md",
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "control raw gap",
+    "field": "dose:populations.verified.raw_gap",
+    "rendered": "+0.110",
+    "surfaces": [
+      "draft/MX-v40.md",
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "events before rule",
+    "field": "counts:comparisons.spacing_only_5_to_11.events_from",
+    "rendered": "57,886",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "events after rule",
+    "field": "counts:comparisons.spacing_only_5_to_11.events_to",
+    "rendered": "42,132",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "rotation deaths",
+    "field": "rot_ip:n_deaths",
+    "rendered": "271",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md",
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "successor dvol",
+    "field": "rot_ip:transfer_core.succ_dvol_mean",
+    "rendered": "\u22120.936",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md",
+      "draft/D-v53-supplement.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "successor dbotness",
+    "field": "rot_ip:transfer_core.succ_dbot_mean",
+    "rendered": "+0.970 | 0.970",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "core pairs",
+    "field": "rot_ip:transfer_core.n_pairs",
+    "rendered": "2,211",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "core deaths",
+    "field": "rot_ip:transfer_core.n_deaths",
+    "rendered": "203",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "planted controls",
+    "field": "rot_self:n_planted",
+    "rendered": "300",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "core death dates",
+    "field": "rot_ip:transfer_core.n_dates",
+    "rendered": "64",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "all death dates",
+    "field": "rot_ip:transfer_envelope.n_dates",
+    "rendered": "98",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "permutation placebo",
+    "field": "rot_ip:null_link_perm_core.succ_dvol_mean",
+    "rendered": "+0.582",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "date-clustered CI lo",
+    "field": "rot_ip:transfer_core.succ_dvol_ci_date_cluster.0",
+    "rendered": "\u22121.302",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy envelope ramp",
+    "field": "rot_decoy:transfer_envelope.succ_dvol_mean",
+    "rendered": "+0.495 | 0.495",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance envelope",
+    "field": "rot_disap:transfer_envelope.succ_dvol_mean",
+    "rendered": "\u22120.849",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance core",
+    "field": "rot_disap:transfer_core.succ_dvol_mean",
+    "rendered": "+0.360 | 0.360",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance denominator",
+    "field": "disap:abusive.evaluable",
+    "rendered": "2,559",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disappearance agents",
+    "field": "disap:abusive.agents_with_events",
+    "rendered": "1,217",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy core",
+    "field": "rot_decoy:transfer_core.succ_dvol_mean",
+    "rendered": "\u22120.094 | \u22120.094",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy core pairs",
+    "field": "rot_decoy:transfer_core.n_pairs",
+    "rendered": "191",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy envelope pairs",
+    "field": "rot_decoy:transfer_envelope.n_pairs",
+    "rendered": "4,207",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy date-CI hi",
+    "field": "rot_decoy:transfer_envelope.succ_dvol_ci_date_cluster.1",
+    "rendered": "0.749",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "IP overlap share",
+    "field": "rot_ip:transfer_rate_core",
+    "rendered": "74.9%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "highlight range hi",
+    "field": "grid:summary.max",
+    "rendered": "0.27",
+    "surfaces": [
+      "draft/D-v53-highlights.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "highlight range lo",
+    "field": "grid:summary.min",
+    "rendered": "0.76",
+    "surfaces": [
+      "draft/D-v53-highlights.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "highlight range order",
+    "field": "grid:summary",
+    "rendered": "0.27 to 0.76",
+    "surfaces": [
+      "draft/D-v53-highlights.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "headline cohort order",
+    "field": "combined:did_combined",
+    "rendered": "854 against 150",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "percentile order",
+    "field": "ranks:balanced_analogue",
+    "rendered": "85th percentile",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "boundary n abusive",
+    "field": "censor:populations.abusive.n_boundary_responders",
+    "rendered": "28",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "boundary n verified",
+    "field": "censor:populations.verified.n_boundary_responders",
+    "rendered": "4",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "boundary share abusive",
+    "field": "censor:populations.abusive.boundary_share_pct",
+    "rendered": "6.8%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "boundary share verified",
+    "field": "censor:populations.verified.boundary_share_pct",
+    "rendered": "5.8%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "censoring n abusive",
+    "field": "censor:populations.abusive.n_responders",
+    "rendered": "413",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "censoring n verified",
+    "field": "censor:populations.verified.n_responders",
+    "rendered": "69",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "abstract arm size",
+    "field": "robots:populations.abusive.n_declared",
+    "rendered": "7,812",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "abstract verified n",
+    "field": "robots:populations.verified.n_declared",
+    "rendered": "200",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "robots abusive share",
+    "field": "robots:populations.abusive.pct_ever_robots",
+    "rendered": "3.51% | 3.5%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "robots verified share",
+    "field": "robots:populations.verified.pct_ever_robots",
+    "rendered": "23.50% | 23.5%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "robots declared share",
+    "field": "robots:populations.declared.pct_ever_robots",
+    "rendered": "59.32% | 59.3%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "planted handoffs",
+    "field": "selftest:n_planted",
+    "rendered": "300",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "planted ramp",
+    "field": "selftest:dB_v_mean_want_pos",
+    "rendered": "2.75",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "planted botness r",
+    "field": "selftest:pearson_bApre_bBpost_want_1",
+    "rendered": "0.90",
+    "surfaces": [
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy deaths with candidate",
+    "field": "rot_decoy:n_deaths_with_candidate",
+    "rendered": "132",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "IP null band lo",
+    "field": "rot_ip:null_link_perm_core.ci.0",
+    "rendered": "\u22120.045",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "IP null band hi",
+    "field": "rot_ip:null_link_perm_core.ci.1",
+    "rendered": "1.283",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "IP null successors",
+    "field": "rot_ip:null_link_perm_core.n_successors",
+    "rendered": "470",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "disap date-CI lo",
+    "field": "rot_disap:transfer_envelope.succ_dvol_ci_date_cluster.0",
+    "rendered": "\u22121.361",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 4-5",
+    "field": "decoy_part:bins.0.succ_dvol_mean",
+    "rendered": "\u22120.094 | \u22120.094",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 6-25",
+    "field": "decoy_part:bins.1.succ_dvol_mean",
+    "rendered": "\u22120.095 | \u22120.095",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 26-100",
+    "field": "decoy_part:bins.2.succ_dvol_mean",
+    "rendered": "+0.000 | 0.000",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 101+",
+    "field": "decoy_part:bins.3.succ_dvol_mean",
+    "rendered": "+0.610 | 0.610",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 4-5 pairs",
+    "field": "decoy_part:bins.0.n_pairs",
+    "rendered": "20",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 101+ pairs",
+    "field": "decoy_part:bins.3.n_pairs",
+    "rendered": "3,441",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy envelope total",
+    "field": "decoy_part:n_envelope_pairs",
+    "rendered": "4,207",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "concentrated-date pairs",
+    "field": "decoy_part:date_concentration.n_pairs",
+    "rendered": "1,532",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "without that date",
+    "field": "decoy_part:date_concentration.without_that_date.succ_dvol_mean",
+    "rendered": "+0.225 | 0.225",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "without-date pairs",
+    "field": "decoy_part:date_concentration.without_that_date.n_pairs",
+    "rendered": "2,675",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 6-25 pairs",
+    "field": "decoy_part:bins.1.n_pairs",
+    "rendered": "171",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 26-100 pairs",
+    "field": "decoy_part:bins.2.n_pairs",
+    "rendered": "575",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 4-5 deaths",
+    "field": "decoy_part:bins.0.n_deaths",
+    "rendered": "4",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 6-25 deaths",
+    "field": "decoy_part:bins.1.n_deaths",
+    "rendered": "11",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 26-100 deaths",
+    "field": "decoy_part:bins.2.n_deaths",
+    "rendered": "24",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy bin 101+ deaths",
+    "field": "decoy_part:bins.3.n_deaths",
+    "rendered": "109",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "concentrated-date mean",
+    "field": "decoy_part:date_concentration.succ_dvol_mean",
+    "rendered": "+0.965 | 0.965",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "deletion CI lo",
+    "field": "decoy_part:date_concentration.without_that_date.succ_dvol_ci_date_cluster.0",
+    "rendered": "\u22120.021",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "deletion CI hi",
+    "field": "decoy_part:date_concentration.without_that_date.succ_dvol_ci_date_cluster.1",
+    "rendered": "0.485",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "decoy core CI hi",
+    "field": "decoy_part:predefined_core.succ_dvol_ci_date_cluster.1",
+    "rendered": "0.335",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "null fixed pairs",
+    "field": "rot_ip:null_link_perm_core.n_pairs_fixed_support",
+    "rendered": "1,944",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "null fixed successors",
+    "field": "rot_ip:null_link_perm_core.n_successors_fixed_support",
+    "rendered": "407",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dormancy pair-weighted",
+    "field": "rot_ip:null_link_perm_core.dormant_share_pair_weighted",
+    "rendered": "42.7%",
+    "surfaces": [
+      "draft/D-v53.md",
+      "draft/MX-v40.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "dormancy unweighted",
+    "field": "rot_ip:null_link_perm_core.dormant_share_of_candidate_dates",
+    "rendered": "27.2%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "unique-date null",
+    "field": "rot_ip:null_link_perm_core_unique_dates.succ_dvol_mean",
+    "rendered": "+0.085 | 0.085",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 binary extraction",
+    "field": "sim_policy:binary_block_tau0.234.extraction_idx",
+    "rendered": "62.1",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 binary harm",
+    "field": "sim_policy:binary_block_tau0.234.human_harm",
+    "rendered": "2,677",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 binary evasion share",
+    "field": "sim_policy:binary_block_tau0.234.evasion_prob",
+    "rendered": "0.364",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 binary dashboard",
+    "field": "sim_policy:binary_block_tau0.234.observed_idx",
+    "rendered": "38.3",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 binary L_D",
+    "field": "sim_policy:binary_block_tau0.234.L_D_idx",
+    "rendered": "91.5",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 throttle extraction",
+    "field": "sim_policy:aggressive_throttle_3b.extraction_idx",
+    "rendered": "58.4",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 throttle harm",
+    "field": "sim_policy:aggressive_throttle_3b.human_harm",
+    "rendered": "3,483",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 throttle evasion share",
+    "field": "sim_policy:aggressive_throttle_3b.evasion_prob",
+    "rendered": "0.422",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 throttle dashboard",
+    "field": "sim_policy:aggressive_throttle_3b.observed_idx",
+    "rendered": "30.0",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 throttle L_D",
+    "field": "sim_policy:aggressive_throttle_3b.L_D_idx",
+    "rendered": "97.1",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 graded extraction",
+    "field": "sim_policy:static_graded_ft1.00.extraction_idx",
+    "rendered": "61.8",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 graded harm",
+    "field": "sim_policy:static_graded_ft1.00.human_harm",
+    "rendered": "1,948",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 graded evasion share",
+    "field": "sim_policy:static_graded_ft1.00.evasion_prob",
+    "rendered": "0.386",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 graded L_D",
+    "field": "sim_policy:static_graded_ft1.00.L_D_idx",
+    "rendered": "86.3",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 adaptive extraction",
+    "field": "sim_policy:adaptive_graded_k0.60.extraction_idx",
+    "rendered": "62.5",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 adaptive harm",
+    "field": "sim_policy:adaptive_graded_k0.60.human_harm",
+    "rendered": "1,911",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 adaptive evasion share",
+    "field": "sim_policy:adaptive_graded_k0.60.evasion_prob",
+    "rendered": "0.394",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.1 adaptive L_D",
+    "field": "sim_policy:adaptive_graded_k0.60.L_D_idx",
+    "rendered": "86.8",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 deterrence level",
+    "field": "sim_head:f_min_at_vref",
+    "rendered": "0.558",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 fresh switch",
+    "field": "sim_head:f_switch",
+    "rendered": "0.886",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 critical value v*",
+    "field": "sim_head:sens.K_E_base.v_collapse",
+    "rendered": "1.100",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 tuned ceiling",
+    "field": "sim_head:static_f_target",
+    "rendered": "1.00",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 sigmoid width",
+    "field": "sim_head:static_width",
+    "rendered": "0.08",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 0.1% band floor",
+    "field": "sim_grid:tolerance_sets.0.001.ceilings.0",
+    "rendered": "0.95",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.2 0.5% band floor",
+    "field": "sim_grid:tolerance_sets.0.005.ceilings.0",
+    "rendered": "0.85",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.3 oscillation loss",
+    "field": "sim_osc:loss_penalty_pct",
+    "rendered": "+19.1%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.3 oscillation harm",
+    "field": "sim_osc:harm_penalty_pct",
+    "rendered": "+49.8%",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "8.3 period ratio",
+    "field": "sim_osc:period_over_loop_delay",
+    "rendered": "2.96",
+    "surfaces": [
+      "draft/D-v53.md"
+    ],
+    "absent_from": [],
+    "status": "ok"
+  },
+  {
+    "note": "Fig. 2 event-time",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_observability_eventtime_v3.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\event_time_study.png",
+    "status": "ok"
+  },
+  {
+    "note": "MX Fig. 4 shuffle null",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_leadlag_shuffle_null_v2.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\reference_renders\\DB_leadlag_shuffle_null_v2.png",
+    "status": "ok"
+  },
+  {
+    "note": "MX Fig. 2 response lag",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_leadlag_tau_distribution_v2_arm.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\reference_renders\\DB_leadlag_tau_distribution_v2_arm.png",
+    "status": "ok"
+  },
+  {
+    "note": "MX Fig. 1 dose balance",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_dose_balance_v3.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\dose_balance_corrected.png",
+    "status": "ok"
+  },
+  {
+    "note": "MX Fig. 6 rotation",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_rotation_conservation_v5_ip.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\reference_renders\\DB_rotation_conservation_v5_ip.png",
+    "status": "ok"
+  },
+  {
+    "note": "MX Fig. 5 sample CCF",
+    "render": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\empirical-support\\outputs\\figures\\DB_leadlag_ccf_sample_v2_arm.png",
+    "source": "C:\\Users\\gezal\\Documents\\bme\\research\\longtail\\papers\\D-adversarial-friction\\analysis\\reference_renders\\DB_leadlag_ccf_sample_v2_arm.png",
+    "status": "ok"
+  },
+  {
+    "note": "partition source hash",
+    "status": "ok"
+  }
+]

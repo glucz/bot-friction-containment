@@ -1,0 +1,132 @@
+{
+  "specification": "corrected (spacing 16, block-insensitive, pre [-10,-6])",
+  "description": "Dose split at the specification of record: event spacing 16, the block-insensitive 404 coordinate, and the [-10,-6] baseline. The raw dose gradient is defender-targeting selection and is never read as a causal gradient; only the adjusted and matched estimates carry weight, and the verified-human control arm shows a larger adjusted retreat gradient, so no measured retreat contrast identifies a bot-specific response.",
+  "populations": {
+    "abusive": {
+      "n_events": 2081,
+      "n_agents": 854,
+      "dO_light": -0.3016314085322473,
+      "dO_heavy": -0.1228473415387754,
+      "raw_gap": 0.17878406699347188,
+      "raw_gap_ci": [
+        -0.05983043951492412,
+        0.3265201556760819
+      ],
+      "adjusted_gap": 0.7561955381728535,
+      "adjusted_gap_ci": [
+        0.4584944335882063,
+        1.1760679764151167
+      ],
+      "smd_pre_O": 0.19738648077080187,
+      "smd_pre_logvol": -1.043064283181898,
+      "pre_levels": {
+        "pre_O": {
+          "heavy": 2.7653208055781753,
+          "light": 2.2497609797381535,
+          "diff": 0.5155598258400218,
+          "diff_ci": [
+            0.19322650707636874,
+            0.8248032307536262
+          ]
+        },
+        "pre_logvol": {
+          "heavy": 1.4342571927170928,
+          "light": 3.350616345078494,
+          "diff": -1.916359152361401
+        }
+      },
+      "matched_gap": 0.6304419715058572,
+      "matched_gap_ci": [
+        0.4444789826129733,
+        0.8856162240616651
+      ],
+      "retreat_light": 0.09842154131847725,
+      "retreat_heavy": 0.09860557768924302,
+      "retreat_gap": 0.00018403637076577772,
+      "retreat_gap_ci": [
+        -0.028638311492335533,
+        0.026807268040050576
+      ],
+      "adjusted_retreat": 0.06917438118126953,
+      "adjusted_retreat_ci": [
+        0.041775458895035075,
+        0.09970034443496256
+      ],
+      "matched_retreat": 0.02538071065989847,
+      "matched_retreat_ci": [
+        0.018478935530732966,
+        0.09159521726299338
+      ],
+      "n_matched": 985,
+      "n_heavy": 1004,
+      "caliper": 0.2,
+      "adjusted_retreat_adjacent_vol": 0.04810919727174274,
+      "dvol_light": 0.5789182880895083,
+      "dvol_heavy": 0.10353705806329903
+    },
+    "verified": {
+      "n_events": 801,
+      "n_agents": 150,
+      "dO_light": 0.037664902108154916,
+      "dO_heavy": 0.14756027363279095,
+      "raw_gap": 0.10989537152463603,
+      "raw_gap_ci": [
+        -0.1779009531668849,
+        0.2744374089589669
+      ],
+      "adjusted_gap": 0.11123262042316244,
+      "adjusted_gap_ci": [
+        -0.3701008904235226,
+        0.26079640909189944
+      ],
+      "smd_pre_O": -0.11541372801835974,
+      "smd_pre_logvol": -1.2997594841696596,
+      "pre_levels": {
+        "pre_O": {
+          "heavy": 1.9010331393605264,
+          "light": 2.1215421672686574,
+          "diff": -0.22050902790813098,
+          "diff_ci": [
+            -0.5946281439727886,
+            0.2392886115667261
+          ]
+        },
+        "pre_logvol": {
+          "heavy": 4.11877463257684,
+          "light": 6.461762953271048,
+          "diff": -2.342988320694208
+        }
+      },
+      "matched_gap": 0.00985068332159672,
+      "matched_gap_ci": [
+        -0.31388746132938866,
+        0.3760331829121866
+      ],
+      "retreat_light": 0.10723192019950124,
+      "retreat_heavy": 0.2125,
+      "retreat_gap": 0.10526807980049875,
+      "retreat_gap_ci": [
+        0.05350723775933497,
+        0.15926413459822314
+      ],
+      "adjusted_retreat": 0.13089227300736275,
+      "adjusted_retreat_ci": [
+        0.06497242403099278,
+        0.204530995767616
+      ],
+      "matched_retreat": 0.14634146341463417,
+      "matched_retreat_ci": [
+        0.07142857142857144,
+        0.22267249004865103
+      ],
+      "n_matched": 287,
+      "n_heavy": 400,
+      "caliper": 0.2,
+      "adjusted_retreat_adjacent_vol": 0.06149522097968664,
+      "dvol_light": 0.15878679865351972,
+      "dvol_heavy": 0.13046738769219224
+    }
+  },
+  "source": "dose_split_recompute.json",
+  "source_sha256": "991106736ace21dd343185e0154936faec706904a12b59d0cabec25aa032cff6"
+}

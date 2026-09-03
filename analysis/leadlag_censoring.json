@@ -1,0 +1,184 @@
+{
+  "source": "leadlag_calendar_per_agent.csv",
+  "indexing": "calendar",
+  "lag_max": 14,
+  "definition": "responders only; a peak at |lag| >= lag_max is treated as right-censored rather than as an observed lag",
+  "populations": {
+    "abusive": {
+      "label": "abusive automation",
+      "n_responders": 413,
+      "n_boundary_responders": 28,
+      "boundary_share_pct": 6.78,
+      "median_naive": 4.0,
+      "median_km": 4.0,
+      "km_curve": [
+        {
+          "t": 1.0,
+          "survival": 0.7481840193704601,
+          "n_risk": 413,
+          "n_event": 104
+        },
+        {
+          "t": 2.0,
+          "survival": 0.6319612590799032,
+          "n_risk": 309,
+          "n_event": 48
+        },
+        {
+          "t": 3.0,
+          "survival": 0.5302663438256658,
+          "n_risk": 261,
+          "n_event": 42
+        },
+        {
+          "t": 4.0,
+          "survival": 0.46731234866828086,
+          "n_risk": 219,
+          "n_event": 26
+        },
+        {
+          "t": 5.0,
+          "survival": 0.3946731234866828,
+          "n_risk": 193,
+          "n_event": 30
+        },
+        {
+          "t": 6.0,
+          "survival": 0.3196125907990315,
+          "n_risk": 163,
+          "n_event": 31
+        },
+        {
+          "t": 7.0,
+          "survival": 0.28087167070217917,
+          "n_risk": 132,
+          "n_event": 16
+        },
+        {
+          "t": 8.0,
+          "survival": 0.25665859564164645,
+          "n_risk": 116,
+          "n_event": 10
+        },
+        {
+          "t": 9.0,
+          "survival": 0.21065375302663436,
+          "n_risk": 106,
+          "n_event": 19
+        },
+        {
+          "t": 10.0,
+          "survival": 0.1767554479418886,
+          "n_risk": 87,
+          "n_event": 14
+        },
+        {
+          "t": 11.0,
+          "survival": 0.14769975786924938,
+          "n_risk": 73,
+          "n_event": 12
+        },
+        {
+          "t": 12.0,
+          "survival": 0.11380145278450361,
+          "n_risk": 61,
+          "n_event": 14
+        },
+        {
+          "t": 13.0,
+          "survival": 0.06779661016949151,
+          "n_risk": 47,
+          "n_event": 19
+        }
+      ]
+    },
+    "verified": {
+      "label": "verified humans",
+      "n_responders": 69,
+      "n_boundary_responders": 4,
+      "boundary_share_pct": 5.8,
+      "median_naive": 8.0,
+      "median_km": 8.0,
+      "km_curve": [
+        {
+          "t": 1.0,
+          "survival": 0.855072463768116,
+          "n_risk": 69,
+          "n_event": 10
+        },
+        {
+          "t": 2.0,
+          "survival": 0.8260869565217391,
+          "n_risk": 59,
+          "n_event": 2
+        },
+        {
+          "t": 3.0,
+          "survival": 0.7391304347826088,
+          "n_risk": 57,
+          "n_event": 6
+        },
+        {
+          "t": 4.0,
+          "survival": 0.6811594202898552,
+          "n_risk": 51,
+          "n_event": 4
+        },
+        {
+          "t": 5.0,
+          "survival": 0.5797101449275364,
+          "n_risk": 47,
+          "n_event": 7
+        },
+        {
+          "t": 6.0,
+          "survival": 0.5652173913043479,
+          "n_risk": 40,
+          "n_event": 1
+        },
+        {
+          "t": 7.0,
+          "survival": 0.5072463768115942,
+          "n_risk": 39,
+          "n_event": 4
+        },
+        {
+          "t": 8.0,
+          "survival": 0.463768115942029,
+          "n_risk": 35,
+          "n_event": 3
+        },
+        {
+          "t": 9.0,
+          "survival": 0.36231884057971014,
+          "n_risk": 32,
+          "n_event": 7
+        },
+        {
+          "t": 10.0,
+          "survival": 0.3043478260869565,
+          "n_risk": 25,
+          "n_event": 4
+        },
+        {
+          "t": 11.0,
+          "survival": 0.18840579710144925,
+          "n_risk": 21,
+          "n_event": 8
+        },
+        {
+          "t": 12.0,
+          "survival": 0.14492753623188404,
+          "n_risk": 13,
+          "n_event": 3
+        },
+        {
+          "t": 13.0,
+          "survival": 0.05797101449275362,
+          "n_risk": 10,
+          "n_event": 6
+        }
+      ]
+    }
+  }
+}

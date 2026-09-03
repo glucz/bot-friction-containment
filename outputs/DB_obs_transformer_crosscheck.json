@@ -1,0 +1,107 @@
+{
+  "scope": "1,191 browser-labelled (labeled_chrome) agents: a MIXED contamination set, NOT the 7,812 treatment arm. Full-period scalars only - supports construct validity, not a DiD.",
+  "reference_frame": "outputs/tables/_botness_axis_v2.npz (published arm-of-record mu_H, sigma_H)",
+  "n_ranked": 1191,
+  "n_missing_cache": 75,
+  "n_below_min_days": 0,
+  "n_analyzed": 1116,
+  "min_days": 20,
+  "O_meanvec__vs__tf_distance": {
+    "n": 1116,
+    "pearson_r": 0.2587,
+    "pearson_p": 1.5872923525062257e-18,
+    "spearman_rho": 0.3695,
+    "spearman_p": 1.940563921002395e-37,
+    "spearman_ci95": [
+      0.3147,
+      0.4243
+    ]
+  },
+  "O_dailymean__vs__tf_distance": {
+    "n": 1116,
+    "pearson_r": 0.1738,
+    "pearson_p": 5.074895565419882e-09,
+    "spearman_rho": 0.2396,
+    "spearman_p": 4.936753616457482e-16,
+    "spearman_ci95": [
+      0.1777,
+      0.3001
+    ]
+  },
+  "O_meanvec__vs__avg_bot_prob": {
+    "n": 1116,
+    "pearson_r": 0.2858,
+    "pearson_p": 2.0163749993339547e-22,
+    "spearman_rho": 0.3919,
+    "spearman_p": 2.792214906776647e-42,
+    "spearman_ci95": [
+      0.3418,
+      0.4433
+    ]
+  },
+  "O_dailymean__vs__avg_bot_prob": {
+    "n": 1116,
+    "pearson_r": 0.2014,
+    "pearson_p": 1.1301048307521242e-11,
+    "spearman_rho": 0.2762,
+    "spearman_p": 5.39561229720569e-21,
+    "spearman_ci95": [
+      0.2153,
+      0.3344
+    ]
+  },
+  "tf_distance_is_bimodal": {
+    "histogram_20bins": [
+      594,
+      13,
+      10,
+      3,
+      7,
+      2,
+      2,
+      1,
+      1,
+      1,
+      5,
+      2,
+      1,
+      1,
+      7,
+      7,
+      16,
+      12,
+      44,
+      387
+    ],
+    "n_low_cluster": 627,
+    "n_high_cluster": 462,
+    "n_middle": 27,
+    "note": "correlation against this column is attenuated by its two-cluster shape; AUC below is the fair statistic"
+  },
+  "transformer_internal_agreement_spearman": 0.9355,
+  "O_meanvec__discriminates_tf_clusters": {
+    "n": 1089,
+    "auc": 0.717,
+    "median_high_cluster": 1.204,
+    "median_low_cluster": 0.715,
+    "mannwhitney_p": 1.4238035842232584e-34
+  },
+  "O_meanvec__discriminates_pbot_half": {
+    "n": 1116,
+    "n_pos": 495,
+    "auc": 0.718
+  },
+  "O_dailymean__discriminates_tf_clusters": {
+    "n": 1089,
+    "auc": 0.625,
+    "median_high_cluster": 2.063,
+    "median_low_cluster": 1.85,
+    "mannwhitney_p": 1.4165255725326976e-12
+  },
+  "O_dailymean__discriminates_pbot_half": {
+    "n": 1116,
+    "n_pos": 495,
+    "auc": 0.632
+  },
+  "reading": "O and the transformer order agents in the SAME direction, significantly (AUC 0.717, Mann-Whitney p=1.4e-34), but they are far from redundant. Non-redundancy is partly protective: an O that reproduced the classifier would reintroduce the circularity of measuring evasion of a detector with that detector's own score. What this CANNOT establish is that the classifier's score also FALLS after blocks - the export is full-period and covers the wrong population, so the post-block behavior of b stays untested."
+}

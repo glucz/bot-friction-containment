@@ -1,9 +1,0 @@
-{
-  "n_planted": 300,
-  "dA_v_mean_want_neg": -2.8202382019889503,
-  "dB_v_mean_want_pos": 3.089686520278587,
-  "dB_v_placebo_mean_want_0": 0.0,
-  "b_transfer_bias_want_0": 0.0055834439367030975,
-  "pearson_bApre_bBpost_want_1": 0.767755393297205,
-  "frac_ramp_exceeds_placebo": 1.0
-}

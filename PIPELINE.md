@@ -9,8 +9,9 @@ Two batteries run over the same corpus:
 
 - the **file battery** (`analysis_a`–`analysis_e`), whose time base is *agent
   age*, over the derived per-agent files;
-- the **calendar-dated DB battery** (`db_battery.py`, `db_analysis_*.py`), which
-  reads the live AGWA MariaDB (6.05B hits, 2019-03→2023-03, 49,080 agents) and
+- the **calendar-dated analyses** (`analysis/*.py`, `db_rotation_probe.py`), which
+  reads the live AGWA MariaDB (6.05B hits, 2019-03→2023-03, 36,029 agents with
+  extracted series) and
   can be re-run in minutes from the Parquet cache (`cache/agents/`) with no
   database connection.
 
@@ -24,57 +25,50 @@ Two batteries run over the same corpus:
 | adaptation *timescale* | autocorrelation time of the evasion signal | **C** |
 | botness density (containment-map input) + demand perturbation | real model outputs + volume volatility | **E** |
 
-## What each analysis supports
+## The calendar-dated analyses
 
-- **A — non-stationarity.** Establishes C1: behavioral series are non-stationary
-  in ~99% of agents. Bot-specific fingerprint vs. the human control: request-mix
-  shift (html/php ↑), probing (404 ↑), robots.txt checking ↑, network-origin
-  *concentration* (country/url/domain entropy ↓).
-- **B — filter-response event study (the causal core).** Difference-in-differences
-  vs. verified humans around filter-pressure events. Bots respond **significantly
-  more than humans** (robots.txt, IP rotation, evasion spread, volume), in
-  heterogeneous directions — the empirical basis for the strategy-switch and
-  adaptation-delay results of the paper.
-- **C — trajectory dynamics.** Adaptation timescale (bots ~5 d vs humans ~2 d)
-  and oscillatory share (~3× humans) — an individual-level arms-race signature.
-- **D — strategy mix.** Empirical (x_V, x_E, x_M) for the bot population, plus
-  lifecycle escalation toward evasion.
-- **E — calibration.** Empirical botness density + operating threshold (the
-  containment-map contours); bot-traffic volatility, timescale, and
-  type-distribution distortion.
+Every measurement the manuscripts quote is a field in an artifact, produced by the script named
+beside it. The authoritative list is `analysis/numbers_manifest.py:ART`, which is what the number
+checker loads; the table below is that list in prose.
 
-## The calendar-dated DB battery
-
-The DB battery produces the paper's headline measurements, each with its own
-robustness script:
-
-| Result | Source of record | Robustness |
+| Artifact | Produced by | Carries |
 |---|---|---|
-| robots.txt ever-read 6.1% bots vs 10.1% controls; no rise after first block (DiD ≈ 0, ns) | `outputs/DB_SUMMARY.md`, `outputs/DB_summary.json` | — |
-| 404-probing suppressed after blocks (DiD −0.026 sig), volume holds (ns) | `outputs/DB_SUMMARY.md` | — |
-| Observability collapse after blocks (DiD −0.227; stealth-only −0.305; n = 28,491) | `outputs/DB_observability_SUMMARY.md` | `db_analysis_obs_sensitivity.py` (metric + control-arm variants) |
-| Dose split: heavy friction ≈2.4× the stealth shift raw, reversing after adjustment/matching | `outputs/DB_dose_robustness_SUMMARY.md` | `db_analysis_dose_robustness.py` (balance, OLS, 1-NN matching) |
-| Loop delays: bot responders 41.6%, median 7 d (mode 1 d, 11.2% censored at 14 d); defender ≈5 d; coupling 0.275 vs 0.145 | `outputs/DB_leadlag_SUMMARY.md` | `db_analysis_leadlag_robustness.py` (Kaplan–Meier, circular-shift null) |
-| Identity rotation: no handoff; IP-overlap successors co-collapse (Δvol −0.33) | `outputs/DB_rotation_SUMMARY_ip.md` | planted-handoff positive control + link-permutation null (in-script) |
-| Strategy mix x_V/x_E/x_M ≈ 0.22/0.78/0.00 (file battery) | `outputs/SUMMARY.md` | — |
+| `analysis/combined_numbers_of_record.json` | `analysis/combined_numbers_of_record.py` | headline observability DiD, stealth-only, sensitivity arm, retreat |
+| `analysis/spec_grid_and_window_free.json` | `analysis/spec_grid_and_window_free.py` | the 180-cell grid, both window-free estimators |
+| `analysis/derived_ranks_and_monthly.json` | `analysis/derived_ranks_and_monthly.py` | grid percentiles |
+| `analysis/dose_split_of_record.json` | `analysis/dose_split_recompute.py` → `dose_split_of_record.py` | raw, adjusted and matched dose contrasts, balance |
+| `analysis/event_time_study.json` | `analysis/event_time_study.py` | event-time leads, parallel-trends check |
+| `analysis/event_spacing_recompute.json` | `analysis/event_spacing_recompute.py` | observability and four response channels per population pairing; Fig. S7 data |
+| `analysis/leadlag_calendar_recompute.json` | `analysis/leadlag_calendar_recompute.py` | response lags, 999-replicate circular-shift null |
+| `analysis/leadlag_density_split.json` | `analysis/leadlag_density_split.py` | lags by observation density |
+| `analysis/leadlag_mask_sensitivity.json` | `analysis/leadlag_mask_sensitivity.py` | lags under the masked imputation rule |
+| `analysis/disappearance_sensitivity.json` | `analysis/disappearance_sensitivity.py` | disappearance rate and follow-up sensitivities |
+| `analysis/robots_engagement.json` | `analysis/robots_engagement.py` | share of each population ever fetching robots.txt |
+| `analysis/decoy_specificity_partition.json` | `analysis/decoy_specificity_partition.py` | decoy bridge by shared-path popularity |
+| `analysis/event_counts_by_spacing.json` | `analysis/event_counts_by_spacing.py` | cost of the spacing rule in events |
+| `outputs/tables/DB_rotation_deaths_v5.csv` | `db_rotation_probe.py` | Finding 6 stage 1: the death cohort |
+| `outputs/DB_rotation_summary_v5*.json` | `db_analysis_identity_rotation.py` | Finding 6 stage 2: bridges, nulls, self-test |
+| `outputs/DB_retreat_cut_sensitivity_sp11.json` | `db_retreat_cut_sensitivity.py` | retreat definition across cut points |
+| `outputs/roster_v2.csv` | `roster_v2.py` | the roster the arm of record is asserted against |
 
-**If a battery is re-run, re-sync every number quoted in the manuscripts** —
-`outputs/*_SUMMARY.md` and `outputs/*.json` are the sources of record.
+**If any analysis is re-run, re-check every number quoted in the manuscripts.**
+`python analysis/numbers_manifest.py` does exactly that and names any surface that has drifted.
 
 ## Run it
 
 ```bash
 python run_all.py            # full file battery (incl. pothuman)
 python run_all.py --quick    # bot + human + chrome only (faster)
-python db_battery.py         # calendar-dated DB battery
 python sim_friction_policy.py    # calibrated policy simulation
 python sim_sweep_costs.py        # cost-parameter sweep
 ```
 
 Outputs:
-- `outputs/SUMMARY.md` — human-readable evidence report
-- `outputs/summary.json` — machine-readable headline numbers
 - `outputs/tables/*.csv`, `outputs/figures/*.png`
+
+The file battery's own summary documents are not released: they report the battery's agent-age
+time base rather than the dated analyses the article quotes, and shipping them beside the current
+artifacts would put two answers to the same question one keystroke apart.
 
 Each analysis is also runnable standalone (`python analysis_b_filter_response.py`).
 `replot_botness_density.py` re-renders the botness-density figure from the cached
@@ -100,8 +94,9 @@ bin table when only its presentation changes (no database needed).
   8,780 production sites already did; this is a natural experiment, framed as such.
 - **Friction dose assignment is endogenous.** Defenders aim heavier friction at
   agents that already look evasive; the raw dose gradient is a targeting pattern
-  and reverses after adjustment. Only the level effect (bot vs control around the
-  same events) carries causal weight.
+  and reverses after adjustment. Only the level effect (bot versus control around a
+  block event) is read as evidence here; the gradient is never cited as a causal
+  dose-response.
 - **The file battery's time base is agent age**, not calendar date; the DB
   battery supplies the dated analyses.
 - **Mimicry is under-counted** in the `.bot` class by construction (stealth bots

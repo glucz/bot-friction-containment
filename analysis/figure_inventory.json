@@ -1,0 +1,73 @@
+{
+  "purpose": "Status of every PNG in the public bundle. Seventeen are cited by the manuscripts and checked for freshness; the rest ship because a CURRENT analysis emits them. Nothing produced by a removed generator ships, versioned or not.",
+  "policy": "fresh-only, current-generator-only",
+  "n_released": 33,
+  "n_cited_and_checked": 17,
+  "n_listed": 16,
+  "entries": {
+    "A_changepoint_timing.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    },
+    "B_response_curve_compliance.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    },
+    "B_response_curve_evasion_index.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    },
+    "B_response_curve_ip_ent.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    },
+    "C_drift_distribution.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    },
+    "DB_leadlag_ccf_sample.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_leadlag_shuffle_null.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_leadlag_tau_distribution.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_obs_transformer_crosscheck.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_rotation_conservation.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_rotation_conservation_disap_ip.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_rotation_conservation_ip.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "DB_rotation_conservation_v5.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "D_class_strategy_mix.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "D_lifecycle_strategy_shift.png": {
+      "status": "uncited",
+      "reason": "emitted by a current Paper D analysis and not cited by the manuscripts"
+    },
+    "E_perturbation_volatility.png": {
+      "status": "sibling-paper",
+      "reason": "produced by the family-wide analyses for another paper in the series; not cited by Paper D"
+    }
+  }
+}

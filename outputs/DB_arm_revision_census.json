@@ -1,0 +1,15 @@
+{
+  "share_arm": 7819,
+  "old_treatment_arm": 35836,
+  "in_both": 7708,
+  "added_by_the_revision": 111,
+  "of_which_declared_crawlers": 0,
+  "of_which_verified_humans": 7,
+  "added_only_by_dropping_the_window_rule": 104,
+  "their_roles_under_the_old_roster": {
+    "labeled_pothuman": 60,
+    "labeled_chrome": 44
+  },
+  "removed_by_the_revision": 28128,
+  "note": "The old criterion required honeypot requests inside the 5th-95th percentile of an agent's activity; agents that scanned only at the very start or end of their observed life were excluded from it regardless of how much of their traffic went to trap paths."
+}

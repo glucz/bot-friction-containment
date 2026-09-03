@@ -1,0 +1,105 @@
+{
+  "seed": 42,
+  "n_bots": 12000,
+  "sunk_share": 0.774,
+  "f_H": 0.5,
+  "vA_sigma": 0.6,
+  "shares": {
+    "X_eq_1|fresh|f_le_1": {
+      "agents_pct": 13.63,
+      "value_pct": 31.21
+    },
+    "X_eq_1|fresh|f_le_fH": {
+      "agents_pct": 58.43,
+      "value_pct": 79.27
+    },
+    "X_eq_1|sunk|f_le_1": {
+      "agents_pct": 44.15,
+      "value_pct": 67.62
+    },
+    "X_eq_1|sunk|f_le_fH": {
+      "agents_pct": 67.42,
+      "value_pct": 85.4
+    },
+    "X_eq_1|as_drawn|f_le_1": {
+      "agents_pct": 36.95,
+      "value_pct": 59.14
+    },
+    "X_eq_1|as_drawn|f_le_fH": {
+      "agents_pct": 65.58,
+      "value_pct": 84.15
+    },
+    "per_agent_X|fresh|f_le_1": {
+      "agents_pct": 14.15,
+      "value_pct": 43.06
+    },
+    "per_agent_X|fresh|f_le_fH": {
+      "agents_pct": 58.43,
+      "value_pct": 79.36
+    },
+    "per_agent_X|sunk|f_le_1": {
+      "agents_pct": 44.15,
+      "value_pct": 67.98
+    },
+    "per_agent_X|sunk|f_le_fH": {
+      "agents_pct": 67.42,
+      "value_pct": 85.45
+    },
+    "per_agent_X|as_drawn|f_le_1": {
+      "agents_pct": 37.2,
+      "value_pct": 62.46
+    },
+    "per_agent_X|as_drawn|f_le_fH": {
+      "agents_pct": 65.58,
+      "value_pct": 83.98
+    },
+    "branch|fresh|f_le_1|visible_only": {
+      "agents_pct": 3.85,
+      "value_pct": 2.54
+    },
+    "branch|fresh|f_le_1|evasion_only": {
+      "agents_pct": 4.35,
+      "value_pct": 17.21
+    },
+    "branch|fresh|f_le_1|either": {
+      "agents_pct": 14.15,
+      "value_pct": 43.06
+    },
+    "branch|fresh|f_le_fH|visible_only": {
+      "agents_pct": 42.82,
+      "value_pct": 27.53
+    },
+    "branch|fresh|f_le_fH|evasion_only": {
+      "agents_pct": 0.0,
+      "value_pct": 0.0
+    },
+    "branch|fresh|f_le_fH|either": {
+      "agents_pct": 58.43,
+      "value_pct": 79.36
+    }
+  },
+  "v_collapse_X1": 1.1,
+  "v_collapse_share": {
+    "agents_pct": 15.48,
+    "value_pct": 35.25
+  },
+  "v_uncontainable_X1_fresh": 1.15,
+  "human_score_density": {
+    "family": "beta",
+    "a": 1.5,
+    "b": 8.0,
+    "threshold_beta": 0.234
+  },
+  "human_mass_above_beta_pct_analytic": 22.21,
+  "human_beta_a": 1.5,
+  "human_beta_b": 8.0,
+  "beta": 0.234,
+  "human_draw_n": 12000,
+  "human_draw_seed": 42,
+  "calibration_path": "agwa_d.toml",
+  "calibration_sha256": "b981c7529b708c0a397e9e96d3d9d3a1ed2d25edab6279c55b0d72654fe6004c",
+  "human_draw_above_beta_count": 2677,
+  "human_draw_above_beta_pct": 22.3083,
+  "bot_volume_below_beta_pct": 38.3,
+  "human_mass_above_beta_pct": 22.21
+}

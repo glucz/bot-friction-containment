@@ -1,0 +1,154 @@
+{
+  "bridge": "honeypot",
+  "n_deaths": 271,
+  "n_deaths_with_candidate": 132,
+  "n_candidate_pairs": 4207,
+  "transfer_core": {
+    "label": "precision_core",
+    "n_pairs": 191,
+    "n_deaths": 11,
+    "n_dates": 11,
+    "largest_date_share_of_pairs": 0.178,
+    "succ_dvol_ci_date_cluster": [
+      -0.4225452194209654,
+      0.3352921399051022
+    ],
+    "succ_dvol_mean": -0.09444095592922513,
+    "succ_dvol_ci": [
+      -0.4225452194209654,
+      0.3352921399051022
+    ],
+    "succ_dbot_mean": 0.10598841054058426,
+    "succ_dbot_ci": [
+      0.0028767869205516567,
+      0.18829708816005525
+    ],
+    "succ_dvol_placebo": -0.06863913538159656,
+    "ramp_minus_placebo": -0.02580182054762857
+  },
+  "transfer_envelope": {
+    "label": "recall_envelope",
+    "n_pairs": 4207,
+    "n_deaths": 132,
+    "n_dates": 58,
+    "largest_date_share_of_pairs": 0.3642,
+    "succ_dvol_ci_date_cluster": [
+      0.03923428029896781,
+      0.7485906930854193
+    ],
+    "succ_dvol_mean": 0.4948159765257817,
+    "succ_dvol_ci": [
+      0.3644610991139244,
+      0.6361554481588471
+    ],
+    "succ_dbot_mean": -0.03569993224072127,
+    "succ_dbot_ci": [
+      -0.06613822946637592,
+      -0.003437483257354897
+    ],
+    "succ_dvol_placebo": -0.1769488328037163,
+    "ramp_minus_placebo": 0.671764809329498
+  },
+  "null_link_perm_core": {
+    "label": "link_permutation_distribution",
+    "date_pool": "death records, so crowded dates repeat",
+    "n_pool": 271,
+    "succ_dvol_mean": -0.08563695254739886,
+    "ci": [
+      -0.5593662462424278,
+      0.4184536597403737
+    ],
+    "n_draws": 200,
+    "n_pairs": 191,
+    "n_pairs_evaluated": 160,
+    "coverage": 0.8377,
+    "n_successors": 84,
+    "n_successors_evaluated": 73,
+    "n_successors_pool": 628,
+    "dormant_share_of_candidate_dates": 0.124,
+    "dormant_share_pair_weighted": 0.1116,
+    "fixed_support_attrition": 0.0,
+    "n_pairs_fixed_support": 160,
+    "n_successors_fixed_support": 73,
+    "eligibility_rule": "fixed support: each successor's unrelated-date pool is restricted BEFORE drawing to dates on which it was observed on at least one side; support is identical across replicates",
+    "excluded_reason": "successors without a full-history cache are excluded: a repeated permutation would need one bounded fetch per successor per draw",
+    "linked_dates_excluded_per_successor": true
+  },
+  "null_link_perm_core_unique_dates": {
+    "label": "link_permutation_distribution_unique_dates",
+    "date_pool": "unique calendar dates",
+    "n_pool": 98,
+    "succ_dvol_mean": 0.03678096799782381,
+    "ci": [
+      -0.4459684406642119,
+      0.558195728600545
+    ],
+    "n_draws": 200,
+    "n_pairs": 191,
+    "n_pairs_evaluated": 160,
+    "coverage": 0.8377,
+    "n_successors": 84,
+    "n_successors_evaluated": 73,
+    "n_successors_pool": 628,
+    "dormant_share_of_candidate_dates": 0.1403,
+    "dormant_share_pair_weighted": 0.1373,
+    "fixed_support_attrition": 0.0,
+    "n_pairs_fixed_support": 160,
+    "n_successors_fixed_support": 73,
+    "eligibility_rule": "fixed support: each successor's unrelated-date pool is restricted BEFORE drawing to dates on which it was observed on at least one side; support is identical across replicates",
+    "excluded_reason": "successors without a full-history cache are excluded: a repeated permutation would need one bounded fetch per successor per draw",
+    "linked_dates_excluded_per_successor": true
+  },
+  "null_link_perm_envelope": {
+    "label": "link_permutation_distribution",
+    "date_pool": "death records, so crowded dates repeat",
+    "n_pool": 271,
+    "succ_dvol_mean": 0.11766062836094825,
+    "ci": [
+      -0.11282134686741159,
+      0.4048556479790431
+    ],
+    "n_draws": 200,
+    "n_pairs": 4207,
+    "n_pairs_evaluated": 3625,
+    "coverage": 0.8617,
+    "n_successors": 628,
+    "n_successors_evaluated": 583,
+    "n_successors_pool": 628,
+    "dormant_share_of_candidate_dates": 0.1908,
+    "dormant_share_pair_weighted": 0.1738,
+    "fixed_support_attrition": 0.0,
+    "n_pairs_fixed_support": 3625,
+    "n_successors_fixed_support": 583,
+    "eligibility_rule": "fixed support: each successor's unrelated-date pool is restricted BEFORE drawing to dates on which it was observed on at least one side; support is identical across replicates",
+    "excluded_reason": "successors without a full-history cache are excluded: a repeated permutation would need one bounded fetch per successor per draw",
+    "linked_dates_excluded_per_successor": true
+  },
+  "null_link_perm_envelope_unique_dates": {
+    "label": "link_permutation_distribution_unique_dates",
+    "date_pool": "unique calendar dates",
+    "n_pool": 98,
+    "succ_dvol_mean": 0.12384567863222246,
+    "ci": [
+      -0.1241533803715516,
+      0.39088235116389897
+    ],
+    "n_draws": 200,
+    "n_pairs": 4207,
+    "n_pairs_evaluated": 3625,
+    "coverage": 0.8617,
+    "n_successors": 628,
+    "n_successors_evaluated": 583,
+    "n_successors_pool": 628,
+    "dormant_share_of_candidate_dates": 0.1828,
+    "dormant_share_pair_weighted": 0.1771,
+    "fixed_support_attrition": 0.0,
+    "n_pairs_fixed_support": 3625,
+    "n_successors_fixed_support": 583,
+    "eligibility_rule": "fixed support: each successor's unrelated-date pool is restricted BEFORE drawing to dates on which it was observed on at least one side; support is identical across replicates",
+    "excluded_reason": "successors without a full-history cache are excluded: a repeated permutation would need one bounded fetch per successor per draw",
+    "linked_dates_excluded_per_successor": true
+  },
+  "transfer_rate_core": 0.0406,
+  "transfer_rate_envelope": 0.4871
+}
